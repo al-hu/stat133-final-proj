@@ -56,7 +56,6 @@ team_hrefs <- xmlSApply(team_rows, xmlAttrs)
 # just in case, here's the character vector with the team abbreviations
 team_names <- substr(team_hrefs, 8, 10)
 
-
 # =========================================================================
 # Scrape the tables Roster, Totals, and Salaries.
 # Now we can pass the first value in 'team_hrefs' to the base url, and form:
@@ -72,7 +71,6 @@ team_names <- substr(team_hrefs, 8, 10)
     
 for (i in 1:length(team_hrefs)) {
     url_team <- paste0(basketref, team_hrefs[i])
-    print(i)
     html_doc <- readLines(con = url_team)
     
     # initial line position of roster html table
