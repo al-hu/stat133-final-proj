@@ -27,7 +27,7 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-rosterATL <- read.csv("~/Desktop/rosterdata/roster-ATL.csv", sep=',')
+rosterATL <- read.csv("../../data/rawdata/roster-data/roster-ATL.csv", sep=',')
 rosterBOS <- read.csv("~/Desktop/rosterdata/roster-BOS.csv", sep=',')
 rosterBRK <- read.csv("~/Desktop/rosterdata/roster-BRK.csv", sep=',')
 rosterCHI <- read.csv("~/Desktop/rosterdata/roster-CHI.csv", sep=',')
