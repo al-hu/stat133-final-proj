@@ -53,7 +53,7 @@ merge_salaries <- function () {
 # output - dataframe that has the salary and stats of each player in the NBA
 
 merge_data <- function(df1, df2, df3) {
-    mydata1 <- df1[, 2:10]
+    mydata1 <- df1[, 2:11]
     mydata2 <- df2[, 3:4]
     mydata3 <- df3[, 3:17]
     partialdata <- merge(mydata1, mydata2, by = "Player")
