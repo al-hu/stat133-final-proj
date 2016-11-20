@@ -16,33 +16,15 @@ length(team_names)
 root <- "/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj"
 source(file.path(root, "code/functions/merge_csvs.R"))
 
+finished_df <- data.frame()
+for (i in team_names) {
+    print(i)
+    roster <- get_roster(i)
+    salary <- get_salaries(i)
+    stats <- get_stats(i)
+    merged <- merge_team(roster, salary, stats)
+    finished_df <- rbind(finished_df, merged)
+}
+finished_df <- finished_df[!duplicated(finished_df$Player), ]
 
-# can use duplicated to get rid of players that have been part of multiple teams
-# XX[!duplicated(XX$ID]  <- this gets rid of 
-roster <- merge_roster(team_names)
-View(roster)
-salaries <- merge_salaries()
-View(salaries)
-stats <- merge_stats()
-View(stats)
-full_data <- merge_data(roster, salaries, stats)
-View(full_data)
-full_data <- full_data[!duplicated(full_data$Player), ]
-View(full_data)
-
-
-
-
-
-
-
-
-
-library(dplyr)
-mydata1 <- roster[, 2:11]
-mydata2 <- salaries[, 3:4]
-mydata3 <- stats[, 3:17]
-partialdata <- inner_join(mydata1, mydata2, by = "Player")
-View(partialdata)
-myfulldata <- inner_join(partialdata, mydata3, by = "Player")
-View(myfulldata)
+View(finished_df)
