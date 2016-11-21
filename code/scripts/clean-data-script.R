@@ -27,4 +27,3 @@ for (i in team_names) {
 }
 finished_df <- finished_df[!duplicated(finished_df$Player), ]
 
-View(finished_df)
