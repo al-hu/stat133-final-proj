@@ -1,13 +1,10 @@
-
-#setwd("/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/code/functions")
-
 # function that reads a roster csv, and returns at dataframe 
 # with the team name appended to each row of the csv
 # input - team name abbreviation (e.g. "CLE")
 # output - dataframe containing data in the team's roster csv
 get_roster <- function(team_name) {
     base_path <- "../../data/rawdata/roster-data/roster-"
-    df <- read.csv(paste0(base_path, team_name, ".csv"))
+    df <- read.csv(paste0(base_path, team_name, ".csv"), na.strings = c('', 'NA'))
     df$Team <- rep(team_name, nrow(df))
     return(df)
 }
@@ -17,7 +14,7 @@ get_roster <- function(team_name) {
 # output - dataframe containing data in the team's stats csv
 get_stats <- function(team_name) {
     base_path <- "../../data/rawdata/stat-data/stats-"
-    df <- read.csv(paste0(base_path, team_name, ".csv"))
+    df <- read.csv(paste0(base_path, team_name, ".csv"), na.strings = c('', 'NA'))
     return(df)
 }
 
@@ -26,7 +23,7 @@ get_stats <- function(team_name) {
 # output - dataframe containing data in the team's salaries csv
 get_salaries <- function(team_name) {
     base_path <- "../../data/rawdata/salary-data/salaries-"
-    df <- read.csv(paste0(base_path, team_name, ".csv"))
+    df <- read.csv(paste0(base_path, team_name, ".csv"), na.strings = c('', 'NA'))
     return(df)
 }
 
