@@ -1,5 +1,4 @@
 
-
 # function that merges three dataframes together, based on column "Player"
 # input 1 - dataframe that contains the rosters of all teams
 # input 2 - dataframe that contains the salaries of each player
