@@ -1,6 +1,6 @@
 new_colname <- c("Player",
                  "Number", "Position", 
-                 "Height(ft-in)", "Weight(lbs)", 
+                 "Height(in)", "Weight(lbs)", 
                  "Birth Date", "Country", 
                  "Years Experience", "College", 
                  "Team", "Salary($)", "Age", 
@@ -52,6 +52,20 @@ convert_salaries_to_numeric <- function(df) {
     salaries <- df$`Salary($)`
     changed <- gsub("\\,", "", salaries)
     df$`Salary($)` <- as.numeric(changed)
-    print(typeof(df$`Salary($)`))
+    return(df)
+}
+
+convert_height_to_inches <- function(df) {
+    heights <- df$`Height(in)`
+    split <- stringr::str_split(heights, "\\-")
+    height_vector <- c()
+    for (i in 1:length(split)) {
+        feet <- as.numeric(split[[i]][1])
+        feet_in_inches <- feet * 12
+        inches <- as.numeric(split[[i]][2])
+        sum <- feet_in_inches + inches
+        height_vector <- c(height_vector, sum)
+    }
+    df$`Height(in)` <- height_vector
     return(df)
 }
