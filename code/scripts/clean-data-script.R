@@ -13,6 +13,7 @@ team_names <- substr(team_hrefs, 8, 10)
 team_names <- team_names[1:30]
 
 root <- "/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj"
+
 source(file.path(root, "code/functions/merge_csvs.R"))
 source(file.path(root, "code/functions/clean_data.R"))
 
@@ -33,6 +34,7 @@ finished_df <- convert_salaries_to_numeric(finished_df)
 finished_df <- convert_height_to_inches(finished_df)
 finished_df <- convert_number_to_factor(finished_df)
 finished_df <- convert_years_to_nums(finished_df)
+
 
 path_to_file <- "/data/cleandata/roster-salary-stats.csv"
 write.csv(finished_df, file = paste0(root, path_to_file))
