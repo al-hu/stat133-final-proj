@@ -70,16 +70,10 @@ convert_height_to_inches <- function(df) {
     return(df)
 }
 
-convert_number_to_factor <- function(df) {
-    factorized <- as.factor(df$Number)
-    df$Number <- factorized
-    return(df)
-}
-
 convert_years_to_nums <- function(df) {
     to_convert <- df$`Years-Experience`
     converted <- stringr::str_replace_all(to_convert, "R", "0")
     num_version <- as.numeric(converted)
-    df$`Years Experience` <- num_version
+    df$`Years-Experience` <- num_version
     return(df)
 }
