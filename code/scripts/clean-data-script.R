@@ -31,7 +31,8 @@ finished_df <- upper_country(finished_df)
 finished_df <- clean_positions(finished_df)
 finished_df <- convert_salaries_to_numeric(finished_df)
 finished_df <- convert_height_to_inches(finished_df)
-
+finished_df <- convert_number_to_factor(finished_df)
+finished_df <- convert_years_to_nums(finished_df)
 
 
 path_to_file <- "/data/cleandata/roster-salary-stats.csv"
