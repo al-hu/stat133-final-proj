@@ -1,0 +1,62 @@
+# setwd("/Users/apple/Documents/college/FALL 2016/stat 133/final/stat133-final-proj/data/cleandata")
+# This is a Shiny web application. 
+# It displays a horizontal bar-chart on team and salary statistic.
+
+library(shiny)
+library(ggplot2)
+
+# Define UI for application that draws a histogram
+ui <- shinyUI(fluidPage(
+   
+   # Application title
+   titlePanel("Team Salaries"),
+   
+   # Sidebar with 2 select widget inputs, one for different statistics and 
+   # the other for displaying order 
+   sidebarLayout(
+      sidebarPanel(
+         selectInput("statistic",
+                     "Desired Salary Statistic",
+                     c("total_payroll",
+                       "min_salary",
+                       "max_salary",
+                       "first_quartile_salary",
+                       "median_salary",
+                       "third_quartile_salary",
+                       "average_salary",
+                       "interquartile_range",
+                       "standard_deviation")),
+         selectInput("order",
+                     "Displaying Order",
+                     c("ascending",
+                       "descending"))
+      ),
+      
+      # Show a horizontal bar-chart 
+      mainPanel(
+         plotOutput("barPlot")
+      )
+   )
+))
+
+# Define server logic required to draw a bar-chart
+server <- shinyServer(function(input, output) {
+  
+  df <- read.csv(file = "team-salaries.csv")
+  
+   output$barPlot <- renderPlot({
+     plswork <- toString(input$statistic)
+      ggplot(df, aes(x = teams, y = get(plswork))) +
+       geom_bar(stat = "identity", fill = "grey") +
+       coord_flip() +
+       theme_minimal() 
+       #ggtitle("Bar-chart for Team-Salaries")
+})
+})
+
+
+# Run the application 
+shinyApp(ui = ui, server = server)
+
+
+
