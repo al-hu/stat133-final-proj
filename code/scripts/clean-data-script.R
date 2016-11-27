@@ -34,5 +34,6 @@ finished_df <- convert_salaries_to_numeric(finished_df)
 finished_df <- convert_height_to_inches(finished_df)
 finished_df <- convert_years_to_nums(finished_df)
 
+
 path_to_file <- "/data/cleandata/roster-salary-stats.csv"
 write.csv(finished_df, file = paste0(root, path_to_file))
