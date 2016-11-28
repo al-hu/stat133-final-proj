@@ -1,26 +1,26 @@
 new_colname <- c("Player",
                  "Number", "Position", 
                  "Height(in)", "Weight(lbs)", 
-                 "Birth-Date", "Country", 
-                 "Years-Experience", "College", 
+                 "Birth.Date", "Country", 
+                 "Years.Experience", "College", 
                  "Team", "Salary($)", "Age", 
-                 "Games-Played", "Games-Started", 
-                 "Minutes-Played", "Field-Goals", 
-                 "Field-Goal-Attempts", 
-                 "Field-Goal-Percentage", 
-                 "Three-Point-Goals", 
-                 "Three-Point-Field-Goal-Attempts", 
-                 "Three-Point-Field-Goal-Percentage", 
-                 "Two-Point-Field-Goals", 
-                 "Two-Point-Field-Goal-Attempts", 
-                 "Two-Point-Field-Goal-Percentage",
-                 "Effective-Field-Goal-Percentage", 
-                 "Free-Throws", "Free-Throw-Attempts", 
-                 "Free-Throw-Percentage", 
-                 "Offensive-Rebounds", 
-                 "Defensive-Rebounds", "Total-Rebounds", 
+                 "Games.Played", "Games.Started", 
+                 "Minutes.Played", "Field.Goals", 
+                 "Field.Goal.Attempts", 
+                 "Field.Goal.Percentage", 
+                 "Three.Point.Goals", 
+                 "Three.Point.Field.Goal.Attempts", 
+                 "Three.Point.Field.Goal.Percentage", 
+                 "Two.Point.Field.Goals", 
+                 "Two.Point.Field.Goal.Attempts", 
+                 "Two.Point.Field.Goal.Percentage",
+                 "Effective.Field.Goal.Percentage", 
+                 "Free.Throws", "Free.Throw.Attempts", 
+                 "Free.Throw.Percentage", 
+                 "Offensive.Rebounds", 
+                 "Defensive.Rebounds", "Total.Rebounds", 
                  "Assists", "Steals", "Blocks", 
-                 "Turnovers", "Personal-Fouls", "Points")
+                 "Turnovers", "Personal.Fouls", "Points")
 
 change_colname <- function(df, names) {
     output <- setNames(df, names)
@@ -71,9 +71,9 @@ convert_height_to_inches <- function(df) {
 }
 
 convert_years_to_nums <- function(df) {
-    to_convert <- df$`Years-Experience`
+    to_convert <- df$`Years.Experience`
     converted <- stringr::str_replace_all(to_convert, "R", "0")
     num_version <- as.numeric(converted)
-    df$`Years-Experience` <- num_version
+    df$`Years.Experience` <- num_version
     return(df)
 }
