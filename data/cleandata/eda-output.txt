@@ -485,8 +485,3 @@ $Personal.Fouls
 $Points
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     0.0   124.5   411.0   516.7   775.5  2376.0 
-
-Warning in install.packages :
-  package ‘FactoMineR’ is not available (for R version 3.2.1)
-Warning in install.packages :
-  package ‘FactoMineR’ is not available (for R version 3.2.1)
