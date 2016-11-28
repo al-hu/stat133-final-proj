@@ -74,6 +74,6 @@ convert_years_to_nums <- function(df) {
     to_convert <- df$`Years.Experience`
     converted <- stringr::str_replace_all(to_convert, "R", "0")
     num_version <- as.numeric(converted)
-    df$`Years-Experience` <- num_version
+    df$`Years.Experience` <- num_version
     return(df)
 }
