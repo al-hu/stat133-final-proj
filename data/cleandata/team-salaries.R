@@ -47,7 +47,7 @@ server <- shinyServer(function(input, output) {
    output$barPlot <- renderPlot({
      
      if(input$order == "ascending"){ggplot(df, aes(x = reorder(teams, get(toString(input$statistic))),
-                                                 y = get(toString(input$statistic)))) +
+                                                 y = get(toString(input$statistic)), fill = teams)) +
          geom_bar(stat = "identity") +
          coord_flip() +
          theme_minimal() +
@@ -55,7 +55,7 @@ server <- shinyServer(function(input, output) {
          xlab("teams") +
          ggtitle("Bar-chart for Team-Salaries")}
     else{ggplot(df, aes(x = reorder(teams, -get(toString(input$statistic))),
-                        y = get(toString(input$statistic)))) +
+                        y = get(toString(input$statistic)), fill = teams)) +
         geom_bar(stat = "identity") +
         coord_flip() +
         theme_minimal() +
