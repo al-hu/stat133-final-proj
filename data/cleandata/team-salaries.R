@@ -45,12 +45,25 @@ server <- shinyServer(function(input, output) {
   df <- read.csv(file = "team-salaries.csv")
   
    output$barPlot <- renderPlot({
-     plswork <- toString(input$statistic)
-      ggplot(df, aes(x = teams, y = get(plswork))) +
-       geom_bar(stat = "identity", fill = "grey") +
-       coord_flip() +
-       theme_minimal() 
-       #ggtitle("Bar-chart for Team-Salaries")
+     
+     if(input$order == "ascending"){ggplot(df, aes(x = reorder(teams, get(toString(input$statistic))),
+                                                 y = get(toString(input$statistic)))) +
+         geom_bar(stat = "identity") +
+         coord_flip() +
+         theme_minimal() +
+         ylab(input$statistic) +
+         xlab("teams") +
+         ggtitle("Bar-chart for Team-Salaries")}
+    else{ggplot(df, aes(x = reorder(teams, -get(toString(input$statistic))),
+                        y = get(toString(input$statistic)))) +
+        geom_bar(stat = "identity") +
+        coord_flip() +
+        theme_minimal() +
+        ylab(input$statistic) +
+        xlab("teams") +
+        ggtitle("Bar-chart for Team-Salaries")}  
+    
+       
 })
 })
 
