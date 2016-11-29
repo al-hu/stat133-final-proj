@@ -69,7 +69,7 @@ compute_pca <- function(matrix_name) {
   return(output)
 }
 
-C_pca <- compute_PCA(matrix_C)
+C_pca <- compute_pca(matrix_C)
 PF_pca <- compute_pca(matrix_PF)
 SF_pca <- compute_pca(matrix_SF)
 SG_pca <- compute_pca(matrix_SG)
@@ -122,9 +122,16 @@ eff_stats_salary <- select(merged_eff_df,
                            Steals, Blocks, 
                            Missed.Field.Goals,
                            Missed.Free.Throws, 
-                           Turnovers, Games.Played,
-                           Efficiency.Index, Salary...)
-View(eff_stats_salary)
+                           Turnovers, 
+                           Games.Played,
+                           Efficiency.Index,Salary...)
+
+eff_stats_salary$Missed.Field.Goals <- abs(eff_stats_salary$
+                                             Missed.Field.Goals)
+eff_stats_salary$Missed.Free.Throws <- abs(eff_stats_salary$
+                                             Missed.Free.Throws)
+eff_stats_salary$Turnovers <- abs(eff_stats_salary$
+                                    Turnovers)
 
 # write csv file and save it to a specific folder
 root <- "/Users/Nicole/Desktop/stat133-final-proj"
