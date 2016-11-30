@@ -11,3 +11,10 @@ vals <- dplyr::select(df, Player, Points, Total.Rebounds, Assists, Steals,
                       Blocks, Field.Goals,Field.Goal.Attempts, Free.Throws, 
                       Free.Throw.Attempts, Turnovers, Games.Played, Salary...)
 
+get_missed <- function(attempts, made) {
+    return (attempts - made)
+}
+
+
+
+View(vals)
