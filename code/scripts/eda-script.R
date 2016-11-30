@@ -20,11 +20,15 @@ library(scales)
 
 # data from repository
 roster_salary_stats <- read.csv("roster-salary-stats.csv")
-View(roster_salary_stats)
+
 # convert column 'Number' to factor in order to compute the freq 
 # for each number
 factorized <- as.factor(roster_salary_stats$Number)
 roster_salary_stats$Number <- factorized
+
+# convert column 'Birth.Date' to date format
+date_format <- as.Date(roster_salary_stats$Birth.Date)
+roster_salary_stats$Birth.Date <- date_format
 
 # =========================================================================
 # Calculate summary statistics for variables
@@ -57,16 +61,16 @@ for(i in qual_colnames) {
   # variables
   barcharts <- ggplot(roster_salary_stats,
                       aes_string(x = i)) +
-               geom_bar() +
-               # add titles and change axis labels
-               labs(title = paste("Frequency of", i, sep = " "),
-                    x = paste(i),
-                    y = "frequency") +
-               # rescale y axis
-               scale_y_continuous(breaks = pretty_breaks(n = 15)) +
-               # rotate x axis label for 45 degrees
-               theme(axis.text.x = element_text(angle = 45,
-                                                hjust = 1))
+                 geom_bar() +
+                 # add titles and change axis labels
+                 labs(title = paste("Frequency of", i, sep = " "),
+                      x = paste(i),
+                      y = "frequency") +
+                 # rescale y axis
+                 scale_y_continuous(breaks = pretty_breaks(n = 15)) +
+                 # rotate x axis label for 45 degrees
+                 theme(axis.text.x = element_text(angle = 45,
+                                                  hjust = 1))
   plot(barcharts)
   dev.off()
 }
@@ -126,6 +130,25 @@ for (i in quan_colnames) {
   plot(histograms)
   dev.off()
 }
+
+# plot histogram for column 'Birth.Date', since it is in date
+# format
+pdf(paste("../../images/", "Birth.date_histogram.pdf", sep = ""))
+# plot histograms with x axis as names of quantitative 
+# variables
+plot(ggplot(roster_salary_stats,
+                     aes(x = roster_salary_stats$Birth.Date)) +
+  # produce histograms with binwidth = 30
+  geom_histogram(bins = 30) +
+  # add titles and change axis labels
+  labs(title = "Histogram of Birth.date (by year)",
+       x = "Birth.Date") +
+  # scale x axis by year
+  scale_x_date(labels = date_format("%Y")) +
+  # rescale y axis
+  scale_y_continuous(breaks = 
+                       pretty_breaks(n = 10)))
+dev.off()
 
 # =========================================================================
 # Produce scatterplots to examine the correlations between variables
@@ -215,4 +238,3 @@ r_value_blk_salary
 # view the descriptive statistics of this regression model
 # eg. r squared value
 summary(regression_blk_salary)
-
