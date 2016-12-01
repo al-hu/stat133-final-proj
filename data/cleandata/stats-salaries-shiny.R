@@ -4,7 +4,7 @@
 
 library(shiny)
 library(ggplot2)
-setwd("/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/data/cleandata")
+setwd("/Users/sarahhu/Desktop/stat133-final-proj/data/cleandata")
 # Define UI for application that draws a histogram
 # setwd("/Users/apple/Documents/college/FALL 2016/stat 133/final/stat133-final-proj/data/cleandata")
 # This is a Shiny web application. 
@@ -49,7 +49,7 @@ ui <- shinyUI(fluidPage(
             checkboxInput(inputId = "toggle",
                           label = "Differentiate Positions by Colors",
                           value = FALSE
-                          )
+            )
         ),
         
         # Show a horizontal bar-chart 
@@ -62,30 +62,27 @@ ui <- shinyUI(fluidPage(
 
 # Define server logic required to draw a bar-chart
 server <- shinyServer(function(input, output) {
-    df <- read.csv("eff-stats-salary.csv")
+    df <- reactive(read.csv("eff-stats-salary.csv"))
 
     #toggle <- toString(input$colored)
-    
-    #cor(df$Points, df$Points)
-    if (input$toggle) {
-        output$scatterPlot <- renderPlot({
-            ggplot(df, aes(x = get(toString(input$xaxis)),
+    output$scatterPlot <- renderPlot({
+      #cor(df$Points, df$Points)
+      if (input$toggle) {
+            ggplot(df(), aes(x = get(toString(input$xaxis)),
                                             y = get(toString(input$yaxis)))) +
-            geom_point(aes(col = df$Position)) +
+            geom_point(aes(col = df()$Position)) +
             theme_minimal() +
             labs(x = input$xaxis, y = input$yaxis, col = "Position")
-        })
-    } else {
-        output$scatterPlot <- renderPlot({
-            ggplot(df, aes(x = get(toString(input$xaxis)),
+      } else {
+            ggplot(df(), aes(x = get(toString(input$xaxis)),
                            y = get(toString(input$yaxis)))) +
                 geom_point() +
                 theme_minimal() +
                 labs(x = input$xaxis, y = input$yaxis)
-        })
-    }
+      }
+    })
 
-    x <- df[, toString(input$xaxis)]
+    #x <- df()[, toString(input$xaxis)]
     #y <- df[, toString(input$yaxis)]
     #coeff <- cor(x, y)
     #output$correlation <- renderText(paste0("Correlation Coefficient: ", as.character(coeff)))
