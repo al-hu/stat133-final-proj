@@ -63,6 +63,7 @@ matrix_SF <- calculate_matrix(SF)
 matrix_SG <- calculate_matrix(SG)
 matrix_PG <- calculate_matrix(PG)
 
+View(matrix_SG)
 # PCA with prcomp()
 compute_pca <- function(matrix_name) {
   output <- prcomp(matrix_name, center = TRUE, scale. = TRUE)
@@ -76,7 +77,7 @@ SG_pca <- compute_pca(matrix_SG)
 PG_pca <- compute_pca(matrix_PG)
 
 compute_weights <- function(name_pca) {
-  output <- name_pca$rotation[,1]
+  output <- abs(name_pca$rotation[,1])
   return(output)
 }
 
@@ -115,6 +116,7 @@ PG$Efficiency.Index <- PG_eff
 merged_eff_df <- Reduce(function(x, y) merge(x, y, all=TRUE), 
                        list(C, PF, SF, SG, PG))
 
+View(merged_eff_df)
 # create a dataframe containing selected 12 variables
 eff_stats_salary <- select(merged_eff_df, 
                            Player, Points, 
@@ -133,6 +135,7 @@ eff_stats_salary$Missed.Free.Throws <- abs(eff_stats_salary$
 eff_stats_salary$Turnovers <- abs(eff_stats_salary$
                                     Turnovers)
 
+View(eff_stats_salary)
 # write csv file and save it to a specific folder
 root <- "/Users/Nicole/Desktop/stat133-final-proj"
 path_to_file <- "/data/cleandata/eff-stats-salary.csv"

@@ -5,7 +5,8 @@
 # This script shows you the exploratory phase. This phase comprises
 # analyzing one varaible at a time calculating summary statistics
 # for all variables. Also, this script produces related graphs for 
-# better analyzing data.
+# better analyzing data and calculates correlations between variables
+# and salary.
 # 
 # Details:
 # The code focuses on performing exploratory analysis.
@@ -93,6 +94,8 @@ for (i in quan_colnames) {
                      aes_string(x = roster_salary_stats$Team,
                                 y = i)) +
                      geom_boxplot() +
+                     # flip the coordinations
+                     coord_flip() +
                      # add titles and change axis labels
                      labs(title = paste("Box Plot of", i,
                                   "(by Team)", sep = " "),
@@ -238,3 +241,23 @@ r_value_blk_salary
 # view the descriptive statistics of this regression model
 # eg. r squared value
 summary(regression_blk_salary)
+
+# =========================================================================
+# Calculate correlation coefficents and r-squared values
+# =========================================================================
+summary(lm(roster_salary_stats$Salary... ~
+           roster_salary_stats$Three.Point.Goals))
+cor(roster_salary_stats$Salary...,
+         roster_salary_stats$Three.Point.Goals)
+summary(lm(roster_salary_stats$Salary... ~
+             roster_salary_stats$Two.Point.Field.Goals))
+cor(roster_salary_stats$Salary...,
+    roster_salary_stats$Two.Point.Field.Goals)
+summary(lm(roster_salary_stats$Salary... ~
+             roster_salary_stats$Field.Goals))
+cor(roster_salary_stats$Salary...,
+    roster_salary_stats$Field.Goals)
+summary(lm(roster_salary_stats$Salary... ~
+             roster_salary_stats$Free.Throws))
+cor(roster_salary_stats$Salary...,
+    roster_salary_stats$Free.Throws)
