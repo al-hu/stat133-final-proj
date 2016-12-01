@@ -53,7 +53,7 @@ stats <- c('Points', 'Total.Rebounds', 'Assists',
 # keep in mind that all variables are divided by number of games
 calculate_matrix <- function(subset_name) {
   output <- as.matrix(subset_name[ ,stats] / 
-                        subset_name$Games.Played)
+                      subset_name$Games.Played)
   return(output)
 }
 
@@ -63,7 +63,6 @@ matrix_SF <- calculate_matrix(SF)
 matrix_SG <- calculate_matrix(SG)
 matrix_PG <- calculate_matrix(PG)
 
-View(matrix_SG)
 # PCA with prcomp()
 compute_pca <- function(matrix_name) {
   output <- prcomp(matrix_name, center = TRUE, scale. = TRUE)
@@ -99,6 +98,7 @@ SF_sigmas <- calculate_sigmas(matrix_SF)
 SG_sigmas <- calculate_sigmas(matrix_SG)
 PG_sigmas <- calculate_sigmas(matrix_PG)
 
+View(SG_sigmas)
 # modified efficiency
 C_eff <- matrix_C %*% (C_weights / C_sigmas)
 PF_eff <- matrix_PF %*% (PF_weights / PF_sigmas)
@@ -116,10 +116,9 @@ PG$Efficiency.Index <- PG_eff
 merged_eff_df <- Reduce(function(x, y) merge(x, y, all=TRUE), 
                        list(C, PF, SF, SG, PG))
 
-View(merged_eff_df)
 # create a dataframe containing selected 12 variables
 eff_stats_salary <- select(merged_eff_df, 
-                           Player, Points, 
+                           Player, Position, Points, 
                            Total.Rebounds, Assists, 
                            Steals, Blocks, 
                            Missed.Field.Goals,
@@ -135,7 +134,6 @@ eff_stats_salary$Missed.Free.Throws <- abs(eff_stats_salary$
 eff_stats_salary$Turnovers <- abs(eff_stats_salary$
                                     Turnovers)
 
-View(eff_stats_salary)
 # write csv file and save it to a specific folder
 root <- "/Users/Nicole/Desktop/stat133-final-proj"
 path_to_file <- "/data/cleandata/eff-stats-salary.csv"
