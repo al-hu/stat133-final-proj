@@ -46,26 +46,62 @@ ui <- shinyUI(fluidPage(
                           "Turnovers",
                           "Games.Played",
                           "Efficiency.Index")),
-            checkboxInput("colored",
-                          "Differentiate Positions by Colors"
+            checkboxInput(inputId = "toggle",
+                          label = "Differentiate Positions by Colors",
+                          value = FALSE
                           )
         ),
         
         # Show a horizontal bar-chart 
         mainPanel(
-            plotOutput("scatterPlot")
+            plotOutput("scatterPlot"),
+            textOutput("correlation")
         )
     )
 ))
 
 # Define server logic required to draw a bar-chart
 server <- shinyServer(function(input, output) {
+    df <- read.csv("eff-stats-salary.csv")
+
+    #toggle <- toString(input$colored)
     
+    #cor(df$Points, df$Points)
+    if (input$toggle) {
+        output$scatterPlot <- renderPlot({
+            ggplot(df, aes(x = get(toString(input$xaxis)),
+                                            y = get(toString(input$yaxis)))) +
+            geom_point(aes(col = df$Position)) +
+            theme_minimal() +
+            labs(x = input$xaxis, y = input$yaxis, col = "Position")
+        })
+    } else {
+        output$scatterPlot <- renderPlot({
+            ggplot(df, aes(x = get(toString(input$xaxis)),
+                           y = get(toString(input$yaxis)))) +
+                geom_point() +
+                theme_minimal() +
+                labs(x = input$xaxis, y = input$yaxis)
+        })
+    }
+
+    x <- df[, toString(input$xaxis)]
+    #y <- df[, toString(input$yaxis)]
+    #coeff <- cor(x, y)
+    #output$correlation <- renderText(paste0("Correlation Coefficient: ", as.character(coeff)))
+
 
 })
 
-
+ui1 <- fluidPage(
+    checkboxInput("somevalue", "Some value", FALSE),
+    verbatimTextOutput("value")
+)
+server1 <- function(input, output) {
+    output$value <- renderText({ input$somevalue })
+}
 # Run the application 
+#shinyApp(ui = ui1, server = server1)
 shinyApp(ui = ui, server = server)
 
 

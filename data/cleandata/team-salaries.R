@@ -34,7 +34,7 @@ ui <- shinyUI(fluidPage(
       
       # Show a horizontal bar-chart 
       mainPanel(
-         plotOutput("barPlot")
+         plotOutput("barPlot"),
       )
    )
 ))
@@ -46,15 +46,17 @@ server <- shinyServer(function(input, output) {
   
    output$barPlot <- renderPlot({
      
-     if(input$order == "ascending"){ggplot(df, aes(x = reorder(teams, get(toString(input$statistic))),
-                                                 y = get(toString(input$statistic)), fill = teams)) +
+     if (input$order == "ascending") {
+         ggplot(df, aes(x = reorder(teams, get(toString(input$statistic))),
+                    y = get(toString(input$statistic)), fill = teams)) +
          geom_bar(stat = "identity") +
          coord_flip() +
          theme_minimal() +
          ylab(input$statistic) +
          xlab("teams") +
          ggtitle("Bar-chart for Team-Salaries")}
-    else{ggplot(df, aes(x = reorder(teams, -get(toString(input$statistic))),
+    else {
+        ggplot(df, aes(x = reorder(teams, -get(toString(input$statistic))),
                         y = get(toString(input$statistic)), fill = teams)) +
         geom_bar(stat = "identity") +
         coord_flip() +
@@ -62,9 +64,7 @@ server <- shinyServer(function(input, output) {
         ylab(input$statistic) +
         xlab("teams") +
         ggtitle("Bar-chart for Team-Salaries")}  
-    
-       
-})
+    })
 })
 
 
