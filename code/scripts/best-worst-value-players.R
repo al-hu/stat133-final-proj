@@ -63,5 +63,5 @@ Best.Worst.Value.Players <- Best.Worst.Players[, c(1,3)]
 Best.Worst.Value.Players
 
 #create txt file for the best and worst 20 players
-sink(file = 'Best.Worst.Value.Players.txt', append = TRUE)
+sink(file = 'best-worst-value-players.txt', append = TRUE)
 
