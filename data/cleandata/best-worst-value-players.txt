@@ -1,0 +1,21 @@
+          Best.Player      Worst.Player
+1       Dahntay Jones   Jimmer Fredette
+2       Briante Weber   Orlando Johnson
+3       Nate Robinson     Justin Harper
+4      Xavier Munford       Coty Clarke
+5     Jordan Hamilton       Tony Wroten
+6          Henry Sims     Keith Appling
+7       Jordan Farmar   Elliot Williams
+8    Jared Cunningham     Nazr Mohammed
+9       Alan Williams Spencer Dinwiddie
+10       Axel Toupane      Luis Montero
+11          Ty Lawson      Josh Huestis
+12    Marcus Thornton      Mitch McGary
+13       J.J. O'Brien    JaKarr Sampson
+14     Jason Thompson      Jordan McRae
+15        Erick Green     Bruno Caboclo
+16    Michael Beasley    Aaron Harrison
+17 Bryce Dejean-Jones       Sonny Weems
+18        Joe Johnson    Archie Goodwin
+19     T.J. McConnell    Andrew Wiggins
+20   Hassan Whiteside      Lou Amundson
