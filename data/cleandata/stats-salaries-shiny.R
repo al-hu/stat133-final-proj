@@ -37,10 +37,10 @@ ui <- shinyUI(fluidPage(
                           "Turnovers",
                           "Games.Played",
                           "Efficiency.Index",
-                          "Salary...")),
+                          "Salary")),
             selectInput("yaxis",
                         "Statistic on Y-Axis",
-                        c("Salary...",
+                        c("Salary",
                           "Points",
                           "Assists",
                           "Steals",
@@ -89,10 +89,6 @@ server <- shinyServer(function(input, output) {
 
       }
     })
-
-    #x <- df()[, toString(input$xaxis)]
-    #y <- df[, toString(input$yaxis)]
-    #coeff <- cor(x, y)
     output$correlation <- renderText({
         df <- read.csv("eff-stats-salary.csv")
         x <- df[, input$xaxis]
@@ -102,22 +98,9 @@ server <- shinyServer(function(input, output) {
                ": ", as.character(coeff))
         })
 
-
 })
 
-ui1 <- fluidPage(
-    checkboxInput("somevalue", "Some value", FALSE),
-    verbatimTextOutput("value")
-)
-server1 <- function(input, output) {
-    output$value <- renderText({ input$somevalue })
-}
-# Run the application 
-#shinyApp(ui = ui1, server = server1)
 shinyApp(ui = ui, server = server)
-
-
-
 
 
 

@@ -15,13 +15,12 @@
 library(dplyr)
 library(ggplot2)
 library(FactoMineR)
-
 setwd("/Users/Nicole/Desktop/stat133-final-proj")
+#setwd("/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj")
 
 # data from github repository
 dat <- read.csv("data/cleandata/roster-salary-stats.csv",
-                row.names = 1,
-                stringsAsFactors = FALSE)
+                row.names = 1)
 
 # =========================================================================
 # Efficiency
@@ -33,6 +32,7 @@ dat <- read.csv("data/cleandata/roster-salary-stats.csv",
 subset_by_position <- function(position_name) {
   output <- dat %>%
     filter(Position == position_name) %>%
+    arrange(Player) %>%
     mutate(Missed.Free.Throws = Free.Throws - Free.Throw.Attempts) %>%
     mutate(Missed.Field.Goals = Field.Goals - Field.Goal.Attempts) %>%
     mutate(Turnovers = -1 * Turnovers)
@@ -44,7 +44,8 @@ PF <- subset_by_position('PF')
 SF <- subset_by_position('SF')
 SG <- subset_by_position('SG')
 PG <- subset_by_position('PG')
-
+View(C)
+View(matrix_C)
 # statistics for efficiency
 stats <- c('Points', 'Total.Rebounds', 'Assists', 
            'Steals', 'Blocks', 'Missed.Free.Throws', 
@@ -62,6 +63,7 @@ matrix_PF <- calculate_matrix(PF)
 matrix_SF <- calculate_matrix(SF)
 matrix_SG <- calculate_matrix(SG)
 matrix_PG <- calculate_matrix(PG)
+
 
 # PCA with prcomp()
 compute_pca <- function(matrix_name) {
@@ -98,7 +100,6 @@ SF_sigmas <- calculate_sigmas(matrix_SF)
 SG_sigmas <- calculate_sigmas(matrix_SG)
 PG_sigmas <- calculate_sigmas(matrix_PG)
 
-View(SG_sigmas)
 # modified efficiency
 C_eff <- matrix_C %*% (C_weights / C_sigmas)
 PF_eff <- matrix_PF %*% (PF_weights / PF_sigmas)
@@ -134,7 +135,12 @@ eff_stats_salary$Missed.Free.Throws <- abs(eff_stats_salary$
 eff_stats_salary$Turnovers <- abs(eff_stats_salary$
                                     Turnovers)
 
+eff_stats_salary <- rename(eff_stats_salary, Salary = Salary...)
+View(eff_stats_salary)
+
+
 # write csv file and save it to a specific folder
 root <- "/Users/Nicole/Desktop/stat133-final-proj"
+#root <- "/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj"
 path_to_file <- "/data/cleandata/eff-stats-salary.csv"
 write.csv(eff_stats_salary, file = paste0(root, path_to_file))
