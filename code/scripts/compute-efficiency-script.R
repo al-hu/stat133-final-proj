@@ -83,6 +83,8 @@ eff_stats_salary <- select(merged_eff_df,
                            Games.Played,
                            Efficiency.Index,Salary...)
 
+# turn missed field goals, missed free throws, and turnovers
+# into positive values in our dataframe that we write to a csv
 eff_stats_salary$Missed.Field.Goals <- abs(eff_stats_salary$
                                              Missed.Field.Goals)
 eff_stats_salary$Missed.Free.Throws <- abs(eff_stats_salary$
@@ -90,6 +92,7 @@ eff_stats_salary$Missed.Free.Throws <- abs(eff_stats_salary$
 eff_stats_salary$Turnovers <- abs(eff_stats_salary$
                                     Turnovers)
 
+# rename the salary column
 eff_stats_salary <- rename(eff_stats_salary, Salary = Salary...)
 
 
