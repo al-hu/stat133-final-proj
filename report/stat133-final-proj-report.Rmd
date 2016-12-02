@@ -55,7 +55,7 @@ Finally, we wanted to explore which players had the best “value”, where valu
 <br/>
 <center>
 
-![*Bar Chart of Players' Position*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Position_barchart.png)
+![*Bar Chart of Players' Position*](/Users/Nicole/Desktop/stat133-final-proj/images/Position_barchart.png)
 
 </center>
 <br/>
@@ -66,7 +66,7 @@ From the position bar chart we can see that there are roughly equal number of pl
 
 <center>
 
-![*Frequency of Players' Age*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Age_histogram.png)
+![*Frequency of Players' Age*](/Users/Nicole/Desktop/stat133-final-proj/images/Age_histogram.png)
 
 </center>
 <br/>
@@ -77,7 +77,7 @@ From histogram of player's ages, we can see that most players are in their mid 2
 
 <center>
 
-![*Frequency of Players' Height*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Height.in._histogram.png)
+![*Frequency of Players' Height*](/Users/Nicole/Desktop/stat133-final-proj/images/Height.in._histogram.png)
 
 </center>
 <br/>
@@ -92,7 +92,7 @@ We used boxplots for exploratory analysis to see the relationship between each s
 <br/>
 <center>
 
-![*Scatterplot of years of experience and salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Years.Experience_Salary.png)
+![*Scatterplot of years of experience and salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Years.Experience_Salary.png)
 
 </center>
 <br/>
@@ -103,7 +103,7 @@ From the scatterplot of the number of years players have played in NBA and their
 <br/>
 <center>
 
-![*Boxplot of Points by Team*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Points_boxplot_by_team.png)
+![*Boxplot of Points by Team*](/Users/Nicole/Desktop/stat133-final-proj/images/Points_boxplot_by_team.png)
 
 </center>
 <br/>
@@ -113,7 +113,7 @@ From the boxplot of points we can see that team Memphis Grizzlies has the lowest
 <br/>
 <center>
 
-![*Scatterplot of Point and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Points_Salary.png)
+![*Scatterplot of Point and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Points_Salary.png)
 
 </center>
 <br/>
@@ -123,7 +123,7 @@ From the scatter plot of points scored in the season and salary, we can see that
 <br/>
 <center>
 
-![*Scatterplot of Field Goals and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Field.Goals_Salary.png)
+![*Scatterplot of Field Goals and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Field.Goals_Salary.png)
 
 </center>
 <br/>
@@ -133,7 +133,7 @@ There are four variables related to points: field goals, three point goals, two 
 <br/>
 <center>
 
-![*Scatterplot of Three Point Goals and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Three.Point.Goals_Salary.png)
+![*Scatterplot of Three Point Goals and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Three.Point.Goals_Salary.png)
 
 </center>
 <br/>
@@ -143,7 +143,7 @@ The scatterplot of the number of three point goals and salaries appears to be ve
 <br/>
 <center>
 
-![*Scatterplot of Two Point Goals and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Two.Point.Goals_Salary.png)
+![*Scatterplot of Two Point Goals and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Two.Point.Goals_Salary.png)
 
 </center>
 <br/>
@@ -154,7 +154,7 @@ Checking the scatterplot of the number of two point goals and salaries, we found
 <br/>
 <center>
 
-![*Scatterplot of Free Throws and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Free.Throws_Salary.png)
+![*Scatterplot of Free Throws and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Free.Throws_Salary.png)
 
 </center>
 
@@ -165,7 +165,7 @@ Another way a player contributes points is by making successful free throws. The
 <br/>
 <center>
 
-![*Scatterplot of Total Rebounds and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Total.Rebounds_Salary.png)
+![*Scatterplot of Total Rebounds and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Total.Rebounds_Salary.png)
 
 </center>
 
@@ -176,7 +176,7 @@ Since basketball is a team game, other skills that help the team such as rebound
 <br/>
 <center>
 
-![*Scatterplot of Offensive Rebounds and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Offensive.Rebounds_Salary.png)
+![*Scatterplot of Offensive Rebounds and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Offensive.Rebounds_Salary.png)
 
 </center>
 
@@ -187,7 +187,7 @@ The scatterplot of the number of offensive rebounds and salaries appears to have
 <br/>
 <center>
 
-![*Scatterplot of Defensive Rebounds and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Defensive.Rebounds_Salary.png)
+![*Scatterplot of Defensive Rebounds and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Defensive.Rebounds_Salary.png)
 
 </center>
 <br/>
@@ -197,7 +197,7 @@ The scatterplot of the number of defensive rebounds and salaries appears to have
 <br/>
 <center>
 
-![*Boxplot of Blocks and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Blocks_boxplot_by_team.png)
+![*Boxplot of Blocks and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Blocks_boxplot_by_team.png)
 
 </center>
 <br/>
@@ -207,7 +207,7 @@ Beside rebounds, a player can also help the team by blocking its opponents shoot
 <br/>
 <center>
 
-![*Scatterplot of Number of Blocks and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Blocks_Salary.png)
+![*Scatterplot of Number of Blocks and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Blocks_Salary.png)
 
 </center>
 
@@ -218,7 +218,7 @@ The scatterplot of the number of blocks and salaries appears to have a weak posi
 <br/>
 <center>
 
-![*Scatterplot of Number of Assists and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Assists_Salary.png)
+![*Scatterplot of Number of Assists and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Assists_Salary.png)
 
 </center>
 
@@ -229,7 +229,7 @@ The scatterplot of the number of assists and salary appears to have a moderate p
 <br/>
 <center>
 
-![*Scatterplot of Number of Steals and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Steals_Salary.png)
+![*Scatterplot of Number of Steals and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Steals_Salary.png)
 
 </center>
 
@@ -240,7 +240,7 @@ The scatterplot of the number of steals and salary appears to have a moderate po
 <br/>
 <center>
 
-![*Scatterplot of Number of Turnovers and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Turnover_Salary.png)
+![*Scatterplot of Number of Turnovers and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Turnover_Salary.png)
 
 </center>
 
@@ -251,7 +251,7 @@ Besides scoring and assistant skills, mistakes players made have surprising rela
 <br/>
 <center>
 
-![*Scatterplot of Number of Personal Fouls and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Personal.Fouls_Salary.png)
+![*Scatterplot of Number of Personal Fouls and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Personal.Fouls_Salary.png)
 
 </center>
 
@@ -266,7 +266,7 @@ Exploratory data analysis of measurements for skills shows that total points, fi
 <br/>
 <center>
 
-![*Scatterplot of EFF Indices and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Eff.Index_Salary.png)
+![*Scatterplot of EFF Indices and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Eff.Index_Salary.png)
 
 </center>
 <br/>
@@ -280,7 +280,7 @@ At the first glance, we observe that dots are pretty spread and there is an posi
 <br/>
 <center>
 
-![*List of Best and Worst Value Players*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Best_Worst_Value.png)
+![*List of Best and Worst Value Players*](/Users/Nicole/Desktop/stat133-final-proj/images/Best_Worst_Value.png)
 
 </center>
 
