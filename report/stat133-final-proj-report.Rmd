@@ -2,7 +2,7 @@
 title: "Determinants of NBA Players' Salary"
 author: "Albert L Hu, Sarah Hu, Ming Ho Cheung, Zihan Chen"
 date: "December 2, 2016"
-output: html_document
+output: pdf_document
 subtitle: Stat 133, Fall 2016
 ---
 
@@ -53,25 +53,33 @@ Finally, we wanted to explore which players had the best “value”, where valu
 
 ### Players Analysis
 <br/>
+<center>
 
-![Bar Chart of Players' Position](/Users/Nicole/Desktop/stat133-final-proj/images/Position_barchart.png)
+![*Bar Chart of Players' Position*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Position_barchart.png)
 
+</center>
 <br/>
 
 From the position bar chart we can see that there are roughly equal number of players in each position. However, there are slightly more players who play power forward(PF) than players who play other positions. This make sense because the power forward's primary goal is shot blocking and short range shooting. They defend opposite power forwards, stay close to the basket, and help teammates in scoring points.
 
 <br/>
 
-![Frequency of Players' Age](/Users/Nicole/Desktop/stat133-final-proj/images/Age_histogram.png)
+<center>
 
+![*Frequency of Players' Age*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Age_histogram.png)
+
+</center>
 <br/>
 
 From histogram of player's ages, we can see that most players are in their mid 20’s, with the average age being 26.6. This make sense because most professional players who finish college are about that age when they join the NBA.  There are few players in their later 30’s because many of players retire due to injuries after playing in the NBA for over a decade.  Additionally, as people age, they lose their stamina and strength, and cannot keep up with others who are younger than they are.
 
 <br/>
 
-![Frequency of Players' Height](/Users/Nicole/Desktop/stat133-final-proj/images/Height.in._histogram.png)
+<center>
 
+![*Frequency of Players' Height*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Height.in._histogram.png)
+
+</center>
 <br/>
 
 From the histogram of height we can see that height of players are roughly normally distributed. The relatively taller players are in the position of center because their height enables them to gather rebounds more effectively.
@@ -82,130 +90,170 @@ We used boxplots for exploratory analysis to see the relationship between each s
 ### Skills and Salary analysis 
 
 <br/>
+<center>
 
-![Scatterplot of years of experience and salary](/Users/Nicole/Desktop/stat133-final-proj/images/Years.Experience_Salary.png)
+![*Scatterplot of years of experience and salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Years.Experience_Salary.png)
 
+</center>
 <br/>
 
 Multiple regression analysis was conducted to determine which explanatory variables were predictors of NBA player salaries.	
 From the scatterplot of the number of years players have played in NBA and their salary, we observe that there is a weak positive correlation of 0.36 between years played in NBA. About 13.12% of the variations in salaries can be explained by years played in NBA. This makes sense because salaries should be more correlated to player’s performance. Although more experience tends to lead to better performance, it is not the cause, since a player's performance can drop off as they age. Thus the number of years players have played in the NBA does not appears to be a main factor that influences the salary of a player.
 
 <br/>
+<center>
 
-![Boxplot of Points by Team](/Users/Nicole/Desktop/stat133-final-proj/images/Points_boxplot_by_team.png)
+![*Boxplot of Points by Team*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Points_boxplot_by_team.png)
 
+</center>
 <br/>
 
 From the boxplot of points we can see that team Memphis Grizzlies has the lowest average total points score in the season. Also, we can see that there are outliers in several teams. There are two people who scored the most points in the entire season, one from the Golden State Warriors(GSW) and one from the Houston Rockets (HOU). After checking the data, we identified these two people to be Stephen Curry, with 2375 points, and James Harden, with 2376 points. The person who scored the second-most points in the entire season is from team Oklahoma City Thunder(OKC). This player is Kevin Durant (who coincidentally is playing for GSW in the 2016-2017 season). However, people who contribute large number of points in the season do not get paid significantly more than other players. Thus, we decide to check the relationship between points score in the season by players and their salaries. 
 
 <br/>
+<center>
 
-![Scatterplot of Point and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Points_Salary.png)
+![*Scatterplot of Point and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Points_Salary.png)
 
+</center>
 <br/>
 
 From the scatter plot of points scored in the season and salary, we can see that there is a moderately strong positive correlation of 0.64 between points scored in the season and salaries. About 40.84% of the variation in salaries can be explained by point scored in the season. This make sense because the higher points scored in a season indicates better performance. Team managers would be willing to pay more for players that can help them win games. However, we expected to see an even stronger correlation between points scored in the season and salaries. Thus we decide to see what variable are related to points, how these variables are related to salaries and investigate what other factors determines how much a player gets paid. 
 
 <br/>
+<center>
 
-![Scatterplot of Field Goals and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Field.Goals_Salary.png)
+![*Scatterplot of Field Goals and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Field.Goals_Salary.png)
 
+</center>
 <br/>
 
 There are four variables related to points: field goals, three point goals, two point goals, and free throws. The scatterplot of the number of field goals and salaries appears to have a moderately strong positive correlation of 0.64. About 40.97% of the variation of salaries can be explained by the number of field goals. Thus the number of points a player contributes appears to be a main factor that influences his salary. This make sense because a team wins a game by scoring more points than its opponent, and players get points by making field goals. Therefore, a player who is able to contribute more field goals than others will be favored, and team manager will be willing to pay high salaries for these players. However, there are two types of field goals: two points and three points. Thus we further analyze to see whether three or two point field goals influence salary more.
 
 <br/>
+<center>
 
-![Scatterplot of Three Point Goals and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Three.Point.Goals_Salary.png)
+![*Scatterplot of Three Point Goals and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Three.Point.Goals_Salary.png)
 
+</center>
 <br/>
 
 The scatterplot of the number of three point goals and salaries appears to be very scattered and has a weak positive correlation of 0.34. Only 11.34% of the variation of salaries can be explained by the number three point goals. Thus the number of three point field goals a player contributes does not appears to be a main factor that influence the amount of salaries a player get, which is understandable because typically a person's three point percentage is much lower than than their two point percentage.  This means that a player will have to make more attempts (and miss more shots) to receive a high number of three point goals.  If the team is spending its possessions on missed three pointers, it has fewer opportunities to make two point baskets, which are easier to make and may be more conducive to scoring more points in the long run.
 
 <br/>
+<center>
 
-![Scatterplot of Two Point Goals and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Two.Point.Goals_Salary.png)
+![*Scatterplot of Two Point Goals and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Two.Point.Goals_Salary.png)
 
+</center>
 <br/>
 
 Checking the scatterplot of the number of two point goals and salaries, we found it to be less scattered than the three point field goals and it has a moderately strong positive correlation of 0.64. About 41.14% of the variation of salaries can be explained by the number two point goals. Thus the number of two point goals a player contributes appears to be a main factor that influences the salary of a player. 
 
 
 <br/>
+<center>
 
-![Scatterplot of Free Throws and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Free.Throws_Salary.png)
+![*Scatterplot of Free Throws and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Free.Throws_Salary.png)
+
+</center>
 
 <br/>
 
 Another way a player contributes points is by making successful free throws. The scatterplot of the number of free throws made and salaries appears to have a moderately strong positive correlation of 0.6213. About 38.47% of the variation of salaries can be explained by the number of free throws. Thus the number of free throws a player makes also appears to be a main factor that influences the salary of a player.
 
 <br/>
+<center>
 
-![Scatterplot of Total Rebounds and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Total.Rebounds_Salary.png)
+![*Scatterplot of Total Rebounds and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Total.Rebounds_Salary.png)
+
+</center>
 
 <br/>
 
 Since basketball is a team game, other skills that help the team such as rebounds, blocks, assist and steals are also critical. The scatterplot of the number of total rebounds and salary appears to have a moderate positive correlation of 0.5299. About 27.92% of the variation of salaries can be explained by the number of total rebounds. Thus the number of total rebounds a player contributes may be a main factor that influences a player's salary. We further investigated two types of rebounds: offensive and defensive. 
 
 <br/>
+<center>
 
-![Scatterplot of Offensive Rebounds and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Offensive.Rebounds_Salary.png)
+![*Scatterplot of Offensive Rebounds and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Offensive.Rebounds_Salary.png)
+
+</center>
 
 <br/>
 
 The scatterplot of the number of offensive rebounds and salaries appears to have a weak positive correlation of 0.3935. Only 15.31% of the variation of salaries can be explained by the number of offensive rebounds. Thus the number of offensive rebounds a player contributes does not appears to be a main factor that influences a player's salary. 
 
 <br/>
+<center>
 
-![Scatterplot of Defensive Rebounds and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Defensive.Rebounds_Salary.png)
+![*Scatterplot of Defensive Rebounds and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Defensive.Rebounds_Salary.png)
 
+</center>
 <br/>
 
 The scatterplot of the number of defensive rebounds and salaries appears to have a moderate positive correlation of 0.5592. About 31.12% of the variation of salaries can be explained by the number of offensive rebounds. Thus the number of defensive rebounds a player contributes appears to be a main factor that influences a player's salary.  It should also be noted that defensive rebounds seem to be more closely related to a player's salary than offensive rebounds.  This is to be expected, since it usually is more important to stop an opposing team from getting a rebound close to the basket than rebounding for your own team.
 
 <br/>
+<center>
 
-![Boxplot of Blocks and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Blocks_boxplot_by_team.png)
+![*Boxplot of Blocks and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Blocks_boxplot_by_team.png)
 
+</center>
 <br/>
 
 Beside rebounds, a player can also help the team by blocking its opponents shoots. From the boxplot of blocks we can see that most team have average blocks around 20. The Charlotte Hornets (CHO) have the highest number of blocks in the season. Many teams have a player that contributes a lot more blocks than the other players in the team. The player who generates the most number of blocks is Hassan Whiteside (269 blocks) from the Miami Heat (MIA). However, after checking the data, this person does not have a high salary compare to players who scored many points in the season. Thus we decide to check the correlation between blocks and salaries.
 
 <br/>
+<center>
 
-![Scatterplot of Number of Blocks and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Blocks_Salary.png)
+![*Scatterplot of Number of Blocks and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Blocks_Salary.png)
+
+</center>
 
 <br/>
 
 The scatterplot of the number of blocks and salaries appears to have a weak positive correlation of 0.3589. Only 12.69% of the variation of salaries can be explained by the number blocks. Thus the number of blocks a player contributes does not appears to be a main factor that influences their salary.
 
 <br/>
+<center>
 
-![Scatterplot of Number of Assists and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Assists_Salary.png)
+![*Scatterplot of Number of Assists and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Assists_Salary.png)
+
+</center>
 
 <br/>
 
 The scatterplot of the number of assists and salary appears to have a moderate positive correlation of 0.5134. Only 26.20% of the variation of salaries can be explained by the number of total assist. Thus the number of assists a player contributes appears to be a main factor that influence a player's salary.
 
 <br/>
+<center>
 
-![Scatterplot of Number of Steals and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Steals_Salary.png)
+![*Scatterplot of Number of Steals and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Steals_Salary.png)
+
+</center>
 
 <br/>
 
 The scatterplot of the number of steals and salary appears to have a moderate positive correlation of 0.4857. About 23.43% of the variation of salaries can be explained by the number of steals . Thus the number of steals a player contributes may be a main factor that influence the salary of a player. 
 
 <br/>
+<center>
 
-![Scatterplot of Number of Turnovers and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Turnover_Salary.png)
+![*Scatterplot of Number of Turnovers and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Turnover_Salary.png)
+
+</center>
 
 <br/>
 
 Besides scoring and assistant skills, mistakes players made have surprising relationship with salary. Measurements for mistakes are turnovers and personal fouls. The scatterplot of the number of turnovers and salary appears to have a moderately strong positive correlation of 0.5828. About 33.83% of the variation of salaries can be explained by the number of turnovers. This result is surprising at first because normally people would think the more turnovers a player has, the worst his basketball skills are, and thus the lower he will be paid. However, if we approach these findings with a different mindset, it makes sense. More turnovers means that the player have more possession of ball, and score more points, meaning that the player has better skills and a hihger salary.  However, handling the ball more often means that if you have the same turnover percentage as other players, you will have more total turnovers.  The relatively high correlation means that the number of turnovers a player contributes is directly correlated to the number of points they scored, and this appears to be a factor influences a player's salary. 
 
 <br/>
+<center>
 
-![Scatterplot of Number of Personal Fouls and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Personal.Fouls_Salary.png)
+![*Scatterplot of Number of Personal Fouls and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Personal.Fouls_Salary.png)
+
+</center>
 
 <br/>
 
@@ -216,9 +264,11 @@ The scatterplot of the number of personal fouls and salary appears to have a mod
 Exploratory data analysis of measurements for skills shows that total points, field goals, especially two point goals, and free throws were the three main contributors to player’s salary. Moreover, rebounds, especially defensive rebounds, assists, turnovers, and personal fouls are also correlated with player’s salary. However, players in different positions have a different skill focus. For example, a player who plays shooting guard will have much higher number of field points recorded than a player who plays power forward. Thus we further calculated weighted efficiency by position to account the different role each position has. Then we graphed a scatter plot between efficiency and salary to see the relationship between a player's efficiency and his salary. 
 
 <br/>
+<center>
 
-![Scatterplot of EFF Indices and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Eff.Index_Salary.png)
+![*Scatterplot of EFF Indices and Salary*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Eff.Index_Salary.png)
 
+</center>
 <br/>
 
 The graph above illustrates the relationship between efficiency of a player and his salary. Each point represents a player and is colored by his position. Hence there are total 471 points across the x axis. The line on the scatterplot is the regression line, which represents the “standard salary” a player should get with different efficiency. Dots above the regression line represents players who receive higher salary than the average salary a player gets with the same efficiency, which may indicate an overpayment. Similarly, dots below the regression line presents players who receive less salary than the average salary earned by players with the same efficiency, which may indicate an underpayment. The further a dot is from the regression line, the more differentiation is the player’s salary from the “standard salary”. 
@@ -228,8 +278,11 @@ At the first glance, we observe that dots are pretty spread and there is an posi
 ### Best and Worst Value Players
 
 <br/>
+<center>
 
-![List of Best and Worst Value Players](/Users/Nicole/Desktop/stat133-final-proj/images/Best_Worst_Value.png)
+![*List of Best and Worst Value Players*](/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/images/Best_Worst_Value.png)
+
+</center>
 
 <br/>
 
