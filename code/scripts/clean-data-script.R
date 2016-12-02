@@ -1,4 +1,5 @@
-setwd("/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/code/functions")
+root <- "/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj"
+setwd(root)
 
 library(XML)
 library(dplyr)
@@ -11,8 +12,6 @@ team_rows <- getNodeSet(doc, "//th[@scope='row']/a")
 team_hrefs <- xmlSApply(team_rows, xmlAttrs)
 team_names <- substr(team_hrefs, 8, 10)
 team_names <- team_names[1:30]
-
-root <- "/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj"
 
 source(file.path(root, "code/functions/merge_csvs.R"))
 source(file.path(root, "code/functions/clean_data.R"))
