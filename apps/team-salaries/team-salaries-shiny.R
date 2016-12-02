@@ -4,12 +4,14 @@
 
 library(shiny)
 library(ggplot2)
+setwd("/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj")
 
 # Define UI for application that draws a histogram
 ui <- shinyUI(fluidPage(
    
    # Application title
    titlePanel("Team Salaries"),
+   p("Display salary statistics for each team."),
    
    # Sidebar with 2 select widget inputs, one for different statistics and 
    # the other for displaying order 
@@ -28,13 +30,13 @@ ui <- shinyUI(fluidPage(
                        "standard_deviation")),
          selectInput("order",
                      "Displaying Order",
-                     c("ascending",
-                       "descending"))
+                     c("Ascending",
+                       "Descending"))
       ),
       
       # Show a horizontal bar-chart 
       mainPanel(
-         plotOutput("barPlot"),
+         plotOutput("barPlot")
       )
    )
 ))
@@ -42,11 +44,11 @@ ui <- shinyUI(fluidPage(
 # Define server logic required to draw a bar-chart
 server <- shinyServer(function(input, output) {
   
-  df <- read.csv(file = "team-salaries.csv")
+  df <- read.csv(file = "data/cleandata/team-salaries.csv")
   
    output$barPlot <- renderPlot({
      
-     if (input$order == "ascending") {
+     if (input$order == "Ascending") {
          ggplot(df, aes(x = reorder(teams, get(toString(input$statistic))),
                     y = get(toString(input$statistic)), fill = teams)) +
          geom_bar(stat = "identity") +

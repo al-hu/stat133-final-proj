@@ -4,108 +4,64 @@
 # Description:
 # This script shows you how to use Principal Component Analysis to
 # compute the Efficiency Index for the final project using
-# the "dummy" data (season 2014-2015)
-# 
-# Details:
-# The code focuses on players who are PG "Point Guards"
-# PG runs the team's offense by controlling the ball and making 
-# sure that it gets to the right players at the right time.
 # =========================================================================
 
 library(dplyr)
 library(ggplot2)
 library(FactoMineR)
+root <- "/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj"
+setwd(root)
 
-setwd("/Users/Nicole/Desktop/stat133-final-proj")
+source(file.path(root, "code/functions/create_eff.R"))
 
-# data from github repository
-dat <- read.csv("data/cleandata/roster-salary-stats.csv",
-                row.names = 1,
-                stringsAsFactors = FALSE)
+# roster salary stats data
+dat <- read.csv("data/cleandata/roster-salary-stats.csv", row.names = 1)
 
-# =========================================================================
-# Efficiency
-# =========================================================================
-
-# subset data for position 'PG' (point guard)
-# and add Missed Field Goals MFG, Missed Free Throws MFT, Turnovers TO
-# (these variables have negative sign)
-subset_by_position <- function(position_name) {
-  output <- dat %>%
-    filter(Position == position_name) %>%
-    mutate(Missed.Free.Throws = Free.Throws - Free.Throw.Attempts) %>%
-    mutate(Missed.Field.Goals = Field.Goals - Field.Goal.Attempts) %>%
-    mutate(Turnovers = -1 * Turnovers)
-  return(output)
-}
-
+# subset the dataset by position
 C <- subset_by_position('C')
 PF <- subset_by_position('PF')
 SF <- subset_by_position('SF')
 SG <- subset_by_position('SG')
 PG <- subset_by_position('PG')
 
-# statistics for efficiency
-stats <- c('Points', 'Total.Rebounds', 'Assists', 
-           'Steals', 'Blocks', 'Missed.Free.Throws', 
-           'Missed.Field.Goals', 'Turnovers')
-
-# keep in mind that all variables are divided by number of games
-calculate_matrix <- function(subset_name) {
-  output <- as.matrix(subset_name[ ,stats] / 
-                      subset_name$Games.Played)
-  return(output)
-}
-
+# get the values required for calculating efficiency
 matrix_C <- calculate_matrix(C)
 matrix_PF <- calculate_matrix(PF)
 matrix_SF <- calculate_matrix(SF)
 matrix_SG <- calculate_matrix(SG)
 matrix_PG <- calculate_matrix(PG)
 
-# PCA with prcomp()
-compute_pca <- function(matrix_name) {
-  output <- prcomp(matrix_name, center = TRUE, scale. = TRUE)
-  return(output)
-}
-
+# run the returned values through pca
 C_pca <- compute_pca(matrix_C)
 PF_pca <- compute_pca(matrix_PF)
 SF_pca <- compute_pca(matrix_SF)
 SG_pca <- compute_pca(matrix_SG)
 PG_pca <- compute_pca(matrix_PG)
 
-compute_weights <- function(name_pca) {
-  output <- abs(name_pca$rotation[,1])
-  return(output)
-}
-
+# get the weights for each player
 C_weights <- compute_weights(C_pca)
 PF_weights <- compute_weights(PF_pca)
 SF_weights <- compute_weights(SF_pca)
 SG_weights <- compute_weights(SG_pca)
 PG_weights <- compute_weights(PG_pca)
 
-# std deviations
-calculate_sigmas <- function(matrix_name) {
-  output <- apply(matrix_name, 2, sd)
-  return(output)
-}
-
+# get the standard deviation for each player
 C_sigmas <- calculate_sigmas(matrix_C)
 PF_sigmas <- calculate_sigmas(matrix_PF)
 SF_sigmas <- calculate_sigmas(matrix_SF)
 SG_sigmas <- calculate_sigmas(matrix_SG)
 PG_sigmas <- calculate_sigmas(matrix_PG)
 
-View(SG_sigmas)
-# modified efficiency
+# calculate modified eficiency, where we take the values
+# and multiply them by the weights and divide by the 
+# standard deviations
 C_eff <- matrix_C %*% (C_weights / C_sigmas)
 PF_eff <- matrix_PF %*% (PF_weights / PF_sigmas)
 SF_eff <- matrix_SF %*% (SF_weights / SF_sigmas)
 SG_eff <- matrix_SG %*% (SG_weights / SG_sigmas)
 PG_eff <- matrix_PG %*% (PG_weights / PG_sigmas)
 
+# add efficiency index to our dataframe
 C$Efficiency.Index <- C_eff
 PF$Efficiency.Index <- PF_eff
 SF$Efficiency.Index <- SF_eff
@@ -127,6 +83,8 @@ eff_stats_salary <- select(merged_eff_df,
                            Games.Played,
                            Efficiency.Index,Salary...)
 
+# turn missed field goals, missed free throws, and turnovers
+# into positive values in our dataframe that we write to a csv
 eff_stats_salary$Missed.Field.Goals <- abs(eff_stats_salary$
                                              Missed.Field.Goals)
 eff_stats_salary$Missed.Free.Throws <- abs(eff_stats_salary$
@@ -134,7 +92,10 @@ eff_stats_salary$Missed.Free.Throws <- abs(eff_stats_salary$
 eff_stats_salary$Turnovers <- abs(eff_stats_salary$
                                     Turnovers)
 
+# rename the salary column
+eff_stats_salary <- rename(eff_stats_salary, Salary = Salary...)
+
+
 # write csv file and save it to a specific folder
-root <- "/Users/Nicole/Desktop/stat133-final-proj"
 path_to_file <- "/data/cleandata/eff-stats-salary.csv"
 write.csv(eff_stats_salary, file = paste0(root, path_to_file))
