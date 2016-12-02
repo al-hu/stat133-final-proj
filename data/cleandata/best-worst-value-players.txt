@@ -19,3 +19,1071 @@
 18        Joe Johnson    Archie Goodwin
 19     T.J. McConnell    Andrew Wiggins
 20   Hassan Whiteside      Lou Amundson
+                Player Number Position Height.in. Weight.lbs.
+1        Channing Frye      9        C         83         255
+2           Sasha Kaun     14        C         83         260
+3       Timofey Mozgov     20        C         85         275
+4      Bismack Biyombo      8        C         81         255
+5       Jason Thompson      1        C         83         250
+6    Jonas Valanciunas     17        C         84         265
+7       Lucas Nogueira     92        C         84         241
+8    Amar'e Stoudemire      5        C         82         245
+9     Hassan Whiteside     21        C         84         265
+10          Al Horford     15        C         82         245
+11        Mike Muscala     31        C         83         240
+12      Tiago Splitter     11        C         83         245
+13      Walter Tavares     22        C         87         260
+14        Kelly Olynyk     41        C         84         238
+15        Tyler Zeller     44        C         84         253
+16        Al Jefferson     25        C         82         289
+17         Cody Zeller     40        C         84         240
+18      Frank Kaminsky     44        C         84         242
+19         Ian Mahinmi     28        C         83         250
+20         Jordan Hill     27        C         82         235
+21        Myles Turner     33        C         83         243
+22      Andre Drummond      0        C         83         279
+23         Aron Baynes     12        C         82         260
+24        Joel Anthony     50        C         81         245
+25    Cameron Bairstow     41        C         81         250
+26   Cristiano Felicio      6        C         82         275
+27         Joakim Noah     13        C         83         230
+28           Pau Gasol     16        C         84         250
+29        J.J. Hickson     21        C         81         242
+30       Marcin Gortat     13        C         83         240
+31        Ryan Hollins     15        C         84         240
+32      Dewayne Dedmon      3        C         84         245
+33         Jason Smith     14        C         84         245
+34      Nikola Vucevic      9        C         84         260
+35         Greg Monroe     15        C         83         265
+36         John Henson     31        C         83         229
+37       Miles Plumlee     18        C         83         249
+38      Kevin Seraphin      1        C         81         285
+39         Robin Lopez      8        C         84         255
+40     Andrea Bargnani      9        C         84         245
+41         Brook Lopez     11        C         84         275
+42          Henry Sims     14        C         82         248
+43         Elton Brand     42        C         80         275
+44       Jahlil Okafor      8        C         83         275
+45        Nerlens Noel      4        C         83         228
+46    Anderson Varejao     18        C         82         273
+47        Andrew Bogut     12        C         84         260
+48        Festus Ezeli     31        C         83         255
+49   Marreese Speights      5        C         82         255
+50    Boban Marjanovic     40        C         87         290
+51         Matt Bonner     15        C         82         235
+52          Tim Duncan     21        C         83         250
+53         Enes Kanter     11        C         83         245
+54       Nazr Mohammed     13        C         82         221
+55        Steven Adams     12        C         84         255
+56        Cole Aldrich     45        C         83         250
+57      DeAndre Jordan      6        C         83         265
+58          Jeff Ayres     19        C         81         240
+59         Chris Kaman     35        C         84         265
+60       Mason Plumlee     24        C         83         245
+61        JaVale McGee     11        C         84         270
+62         Salah Mejri     50        C         85         245
+63       Zaza Pachulia     27        C         83         270
+64      Chris Andersen      7        C         82         245
+65          Marc Gasol     33        C         85         255
+66         Chuck Hayes     44        C         78         240
+67        Clint Capela     15        C         82         240
+68       Dwight Howard     12        C         83         265
+69         Jeff Withey     24        C         84         231
+70         Rudy Gobert     27        C         85         245
+71        Tibor Pleiss     21        C         87         256
+72    DeMarcus Cousins     15        C         83         270
+73        Kosta Koufos     41        C         84         265
+74 Willie Cauley-Stein      0        C         84         240
+75   Joffrey Lauvergne     77        C         83         220
+76        Jusuf Nurkic     23        C         84         280
+77        Nikola Jokic     15        C         82         250
+78       Alexis Ajinca     42        C         86         248
+79    Kendrick Perkins      5        C         82         270
+80           Omer Asik      3        C         84         255
+81        Gorgui Dieng      5        C         83         241
+82  Karl-Anthony Towns     32        C         84         244
+83      Nikola Pekovic     14        C         83         307
+84            Alex Len     21        C         85         260
+85      Tyson Chandler      4        C         85         240
+86        Robert Sacre     50        C         84         270
+87         Roy Hibbert     17        C         86         270
+88         Tarik Black     28        C         81         250
+   Birth.Date Country Years.Experience
+1  1983-05-17      US                9
+2  1985-05-08      RU                0
+3  1986-07-16      RU                5
+4  1992-08-28      CD                4
+5  1986-07-21      US                7
+6  1992-05-06      LT                3
+7  1992-07-26      BR                1
+8  1982-11-16      US               13
+9  1989-06-13      US                3
+10 1986-06-03      DO                8
+11 1991-07-01      US                2
+12 1985-01-01      BR                5
+13 1992-03-22      CV                0
+14 1991-04-19      CA                2
+15 1990-01-17      US                3
+16 1985-01-04      US               11
+17 1992-10-05      US                2
+18 1993-04-04      US                0
+19 1986-11-05      FR                7
+20 1987-07-27      US                6
+21 1996-03-24      US                0
+22 1993-08-10      US                3
+23 1986-12-09      NZ                3
+24 1982-08-09      CA                8
+25 1990-12-07      AU                1
+26 1992-07-07      BR                0
+27 1985-02-25      US                8
+28 1980-07-06      ES               14
+29 1988-09-04      US                7
+30 1984-02-17      PL                8
+31 1984-10-10      US                9
+32 1989-08-12      US                2
+33 1986-03-02      US                7
+34 1990-10-24      CH                4
+35 1990-06-04      US                5
+36 1990-12-28      US                3
+37 1988-09-01      US                3
+38 1989-12-07      GF                5
+39 1988-04-01      US                7
+40 1985-10-26      IT                9
+41 1988-04-01      US                7
+42 1990-03-27      US                3
+43 1979-03-11      US               16
+44 1995-12-15      US                0
+45 1994-04-10      US                1
+46 1982-09-28      BR               11
+47 1984-11-28      AU               10
+48 1989-10-21      NG                2
+49 1987-08-04      US                7
+50 1988-08-15      RS                0
+51 1980-04-05      US               11
+52 1976-04-25      VI               18
+53 1992-05-20      CH                4
+54 1977-09-05      US               17
+55 1993-07-20      NZ                2
+56 1988-10-31      US                5
+57 1988-07-21      US                7
+58 1987-04-29      US                5
+59 1982-04-28      US               12
+60 1990-03-05      US                2
+61 1988-01-19      US                7
+62 1986-06-15      TN                0
+63 1984-02-10      GE               12
+64 1978-07-07      US               13
+65 1985-01-29      ES                7
+66 1983-06-11      US               10
+67 1994-05-18      CH                1
+68 1985-12-08      US               11
+69 1990-03-07      US                2
+70 1992-06-26      FR                2
+71 1989-11-02      DE                0
+72 1990-08-13      US                5
+73 1989-02-24      US                7
+74 1993-08-18      US                0
+75 1991-09-30      FR                1
+76 1994-08-23      BA                1
+77 1995-02-19      RS                0
+78 1988-05-06      FR                5
+79 1984-11-10      US               12
+80 1986-07-04      TR                5
+81 1990-01-18      SN                2
+82 1995-11-15      US                0
+83 1986-01-03      ME                5
+84 1993-06-16      UA                2
+85 1982-10-02      US               14
+86 1989-06-06      US                3
+87 1986-12-11      US                7
+88 1991-11-22      US                1
+                                 College Team Salary... Age
+1                  University of Arizona  CLE   7807579  32
+2                   University of Kansas  CLE   1300000  30
+3                                   <NA>  CLE   4950000  29
+4                                   <NA>  TOR   3000000  23
+5                       Rider University  TOR    328955  29
+6                                   <NA>  TOR   4660482  23
+7                                   <NA>  TOR   1842000  23
+8                                   <NA>  MIA   1499187  33
+9                    Marshall University  MIA    981348  26
+10                 University of Florida  ATL  12000000  29
+11                   Bucknell University  ATL    947276  24
+12                                  <NA>  ATL   8500000  31
+13                                  <NA>  ATL   1000000  23
+14                    Gonzaga University  BOS   2165160  24
+15          University of North Carolina  BOS   2616975  26
+16                                  <NA>  CHO  13833333  31
+17                    Indiana University  CHO   4204200  23
+18               University of Wisconsin  CHO   2612500  22
+19                                  <NA>  IND   4000000  29
+20                 University of Arizona  IND   4000000  28
+21         University of Texas at Austin  IND   2357760  19
+22             University of Connecticut  DET   3272091  22
+23           Washington State University  DET   6500000  29
+24       University of Nevada, Las Vegas  DET   2500000  33
+25              University of New Mexico  CHI    845059  25
+26                                  <NA>  CHI    525090  23
+27                 University of Florida  CHI  13400000  30
+28                                  <NA>  CHI   7448760  35
+29       North Carolina State University  WAS    366337  27
+30                                  <NA>  WAS  11217391  31
+31 University of California, Los Angeles  WAS    176375  31
+32     University of Southern California  ORL    947278  26
+33             Colorado State University  ORL   4300000  29
+34     University of Southern California  ORL  11250000  25
+35                 Georgetown University  MIL  16400000  25
+36          University of North Carolina  MIL   2943221  25
+37                       Duke University  MIL   2109294  27
+38                                  <NA>  NYK   2800000  26
+39                   Stanford University  NYK  13000000  27
+40                                  <NA>  BRK   1362900  30
+41                   Stanford University  BRK  20000000  27
+42                 Georgetown University  BRK    161622  25
+43                       Duke University  PHI    890693  36
+44                       Duke University  PHI   4582680  20
+45                University of Kentucky  PHI   3457800  21
+46                                  <NA>  GSW    458575  33
+47                    University of Utah  GSW  12000000  31
+48                 Vanderbilt University  GSW   2008748  26
+49                 University of Florida  GSW   3815000  28
+50                                  <NA>  SAS   1200000  27
+51                 University of Florida  SAS   1499187  35
+52                Wake Forest University  SAS   5000000  39
+53                                  <NA>  OKC  16400000  23
+54                University of Kentucky  OKC    352750  38
+55              University of Pittsburgh  OKC   2279040  22
+56                  University of Kansas  LAC   1100600  27
+57                  Texas A&M University  LAC  19500000  27
+58              Arizona State University  LAC    317232  28
+59           Central Michigan University  POR   5000000  33
+60                       Duke University  POR   1415520  25
+61            University of Nevada, Reno  DAL   1270964  28
+62                                  <NA>  DAL    525093  29
+63                                  <NA>  DAL   5200000  31
+64                         Blinn College  MEM   5000000  37
+65                                  <NA>  MEM  19700000  31
+66                University of Kentucky  HOU     83583  32
+67                                  <NA>  HOU   1242720  21
+68                                  <NA>  HOU  22359364  30
+69                  University of Kansas  UTA    947276  25
+70                                  <NA>  UTA   1175880  23
+71                                  <NA>  UTA   3000000  26
+72                University of Kentucky  SAC  14728844  25
+73                 Ohio State University  SAC   7500000  26
+74                University of Kentucky  SAC   3398280  22
+75                                  <NA>  DEN   1709720  24
+76                                  <NA>  DEN   1842000  21
+77                                  <NA>  DEN   1300000  20
+78                                  <NA>  NOP   4300000  27
+79                                  <NA>  NOP   1499200  31
+80                                  <NA>  NOP  11000000  29
+81              University of Louisville  MIN   1474440  26
+82                University of Kentucky  MIN   5703600  20
+83                                  <NA>  MIN  12100000  30
+84                University of Maryland  PHO   3807120  22
+85                                  <NA>  PHO  13000000  33
+86                    Gonzaga University  LAL    981348  26
+87                 Georgetown University  LAL  15500000  29
+88                  University of Kansas  LAL    845059  24
+   Games.Played Games.Started Minutes.Played Field.Goals
+1            26             3            446          71
+2            25             0             95           9
+3            76            48           1326         203
+4            82            22           1808         156
+5            19             6            292          32
+6            60            59           1557         303
+7            29             1            225          28
+8            52            36            762         125
+9            73            43           2125         413
+10           82            82           2631         529
+11           60             0            565          76
+12           36             2            579          81
+13           11             0             73          11
+14           69             8           1395         253
+15           60             3            710         138
+16           47            18           1096         245
+17           73            60           1774         231
+18           81             3           1708         215
+19           71            71           1816         264
+20           73            11           1513         278
+21           60            30           1367         264
+22           81            81           2666         552
+23           81             1           1233         194
+24           19             0             96           6
+25           18             2            103          13
+26           31             4            321          40
+27           29             2            635          51
+28           72            72           2291         467
+29           15             0            131          25
+30           75            74           2256         433
+31            5             3             48           4
+32           58            20            705          99
+33           76             2           1181         244
+34           65            60           2037         533
+35           79            67           2314         491
+36           57             1            960         164
+37           61            14            870         140
+38           48             0            526          84
+39           82            82           2219         357
+40           46             0            634         127
+41           73            73           2457         591
+42           14             4            263          33
+43           17             1            225          31
+44           53            48           1591         397
+45           67            62           1965         306
+46           22             0            186          21
+47           70            66           1451         175
+48           46            13            770         125
+49           72             0            832         197
+50           54             4            508         105
+51           30             2            206          29
+52           61            60           1536         215
+53           82             1           1721         414
+54            5             0             19           3
+55           80            80           2014         261
+56           60             5            800         134
+57           77            77           2598         357
+58           17             0            107          12
+59           16             2            112          20
+60           82            82           2084         267
+61           34             2            370          77
+62           34             6            397          49
+63           76            69           2004         219
+64           20            14            366          34
+65           52            52           1791         328
+66            2             0             24           1
+67           77            35           1471         231
+68           71            71           2280         372
+69           51            10            658          87
+70           61            60           1932         198
+71           12             0             82          11
+72           65            65           2246         601
+73           78            14           1482         236
+74           66            39           1412         191
+75           59            15           1041         195
+76           32             3            547         101
+77           80            55           1733         307
+78           59            17            861         150
+79           37             5            542          40
+80           68            64           1178         104
+81           82            39           2220         308
+82           82            82           2627         625
+83           12             3            156          19
+84           78            46           1821         264
+85           66            60           1618         183
+86           25             1            320          31
+87           81            81           1878         182
+88           39             0            496          57
+   Field.Goal.Attempts Field.Goal.Percentage Three.Point.Goals
+1                  161                 0.441                43
+2                   17                 0.529                 0
+3                  359                 0.565                 1
+4                  288                 0.542                 0
+5                   66                 0.485                 5
+6                  536                 0.565                 0
+7                   44                 0.636                 1
+8                  221                 0.566                 0
+9                  682                 0.606                 0
+10                1048                 0.505                88
+11                 152                 0.500                12
+12                 155                 0.523                 0
+13                  19                 0.579                 0
+14                 556                 0.455                85
+15                 290                 0.476                 0
+16                 505                 0.485                 0
+17                 437                 0.529                 1
+18                 525                 0.410                68
+19                 448                 0.589                 0
+20                 549                 0.506                 0
+21                 530                 0.498                 3
+22                1060                 0.521                 2
+23                 384                 0.505                 0
+24                  10                 0.600                 0
+25                  40                 0.325                 1
+26                  72                 0.556                 0
+27                 133                 0.383                 0
+28                 995                 0.469                24
+29                  46                 0.543                 0
+30                 764                 0.567                 0
+31                   7                 0.571                 0
+32                 177                 0.559                 0
+33                 503                 0.485                 4
+34                1046                 0.510                 2
+35                 941                 0.522                 0
+36                 291                 0.564                 0
+37                 233                 0.601                 0
+38                 205                 0.410                 0
+39                 662                 0.539                 0
+40                 279                 0.455                 3
+41                1157                 0.511                 2
+42                  77                 0.429                 0
+43                  72                 0.431                 0
+44                 781                 0.508                 1
+45                 587                 0.521                 1
+46                  48                 0.438                 0
+47                 279                 0.627                 1
+48                 228                 0.548                 0
+49                 456                 0.432                24
+50                 174                 0.603                 0
+51                  57                 0.509                15
+52                 441                 0.488                 0
+53                 719                 0.576                10
+54                   5                 0.600                 0
+55                 426                 0.613                 0
+56                 225                 0.596                 0
+57                 508                 0.703                 0
+58                  23                 0.522                 0
+59                  43                 0.465                 1
+60                 517                 0.516                 0
+61                 134                 0.575                 0
+62                  78                 0.628                 0
+63                 470                 0.466                 0
+64                  62                 0.548                 2
+65                 707                 0.464                 2
+66                   2                 0.500                 0
+67                 397                 0.582                 0
+68                 600                 0.620                 0
+69                 162                 0.537                 0
+70                 354                 0.559                 0
+71                  25                 0.440                 0
+72                1332                 0.451                70
+73                 444                 0.532                 0
+74                 339                 0.563                 0
+75                 380                 0.513                13
+76                 242                 0.417                 0
+77                 600                 0.512                28
+78                 315                 0.476                 0
+79                  75                 0.533                 0
+80                 195                 0.533                 0
+81                 579                 0.532                 6
+82                1153                 0.542                30
+83                  50                 0.380                 0
+84                 624                 0.423                 1
+85                 314                 0.583                 0
+86                  75                 0.413                 0
+87                 411                 0.443                 0
+88                 104                 0.548                 0
+   Three.Point.Field.Goal.Attempts Three.Point.Field.Goal.Percentage
+1                              114                             0.377
+2                                0                                NA
+3                                7                             0.143
+4                                1                             0.000
+5                               15                             0.333
+6                                0                                NA
+7                                3                             0.333
+8                                0                                NA
+9                                0                                NA
+10                             256                             0.344
+11                              39                             0.308
+12                               2                             0.000
+13                               0                                NA
+14                             210                             0.405
+15                               0                                NA
+16                               0                                NA
+17                              10                             0.100
+18                             202                             0.337
+19                               0                                NA
+20                               1                             0.000
+21                              14                             0.214
+22                               6                             0.333
+23                               2                             0.000
+24                               0                                NA
+25                               5                             0.200
+26                               4                             0.000
+27                               1                             0.000
+28                              69                             0.348
+29                               1                             0.000
+30                               1                             0.000
+31                               0                                NA
+32                               0                                NA
+33                              16                             0.250
+34                               9                             0.222
+35                               1                             0.000
+36                               1                             0.000
+37                               0                                NA
+38                               2                             0.000
+39                               1                             0.000
+40                              16                             0.188
+41                              14                             0.143
+42                               0                                NA
+43                               1                             0.000
+44                               6                             0.167
+45                               2                             0.500
+46                               0                                NA
+47                               1                             1.000
+48                               0                                NA
+49                              62                             0.387
+50                               0                                NA
+51                              34                             0.441
+52                               2                             0.000
+53                              21                             0.476
+54                               0                                NA
+55                               0                                NA
+56                               0                                NA
+57                               1                             0.000
+58                               1                             0.000
+59                               4                             0.250
+60                               4                             0.000
+61                               1                             0.000
+62                               1                             0.000
+63                               3                             0.000
+64                               9                             0.222
+65                               3                             0.667
+66                               0                                NA
+67                               1                             0.000
+68                               6                             0.000
+69                               2                             0.000
+70                               0                                NA
+71                               2                             0.000
+72                             210                             0.333
+73                               0                                NA
+74                               2                             0.000
+75                              53                             0.245
+76                               3                             0.000
+77                              84                             0.333
+78                               1                             0.000
+79                               0                                NA
+80                               0                                NA
+81                              20                             0.300
+82                              88                             0.341
+83                               0                                NA
+84                               7                             0.143
+85                               1                             0.000
+86                               0                                NA
+87                               2                             0.000
+88                               0                                NA
+   Two.Point.Field.Goals Two.Point.Field.Goal.Attempts
+1                     28                            47
+2                      9                            17
+3                    202                           352
+4                    156                           287
+5                     27                            51
+6                    303                           536
+7                     27                            41
+8                    125                           221
+9                    413                           682
+10                   441                           792
+11                    64                           113
+12                    81                           153
+13                    11                            19
+14                   168                           346
+15                   138                           290
+16                   245                           505
+17                   230                           427
+18                   147                           323
+19                   264                           448
+20                   278                           548
+21                   261                           516
+22                   550                          1054
+23                   194                           382
+24                     6                            10
+25                    12                            35
+26                    40                            68
+27                    51                           132
+28                   443                           926
+29                    25                            45
+30                   433                           763
+31                     4                             7
+32                    99                           177
+33                   240                           487
+34                   531                          1037
+35                   491                           940
+36                   164                           290
+37                   140                           233
+38                    84                           203
+39                   357                           661
+40                   124                           263
+41                   589                          1143
+42                    33                            77
+43                    31                            71
+44                   396                           775
+45                   305                           585
+46                    21                            48
+47                   174                           278
+48                   125                           228
+49                   173                           394
+50                   105                           174
+51                    14                            23
+52                   215                           439
+53                   404                           698
+54                     3                             5
+55                   261                           426
+56                   134                           225
+57                   357                           507
+58                    12                            22
+59                    19                            39
+60                   267                           513
+61                    77                           133
+62                    49                            77
+63                   219                           467
+64                    32                            53
+65                   326                           704
+66                     1                             2
+67                   231                           396
+68                   372                           594
+69                    87                           160
+70                   198                           354
+71                    11                            23
+72                   531                          1122
+73                   236                           444
+74                   191                           337
+75                   182                           327
+76                   101                           239
+77                   279                           516
+78                   150                           314
+79                    40                            75
+80                   104                           195
+81                   302                           559
+82                   595                          1065
+83                    19                            50
+84                   263                           617
+85                   183                           313
+86                    31                            75
+87                   182                           409
+88                    57                           104
+   Two.Point.Field.Goal.Percentage Effective.Field.Goal.Percentage
+1                            0.596                           0.575
+2                            0.529                           0.529
+3                            0.574                           0.567
+4                            0.544                           0.542
+5                            0.529                           0.523
+6                            0.565                           0.565
+7                            0.659                           0.648
+8                            0.566                           0.566
+9                            0.606                           0.606
+10                           0.557                           0.547
+11                           0.566                           0.539
+12                           0.529                           0.523
+13                           0.579                           0.579
+14                           0.486                           0.531
+15                           0.476                           0.476
+16                           0.485                           0.485
+17                           0.539                           0.530
+18                           0.455                           0.474
+19                           0.589                           0.589
+20                           0.507                           0.506
+21                           0.506                           0.501
+22                           0.522                           0.522
+23                           0.508                           0.505
+24                           0.600                           0.600
+25                           0.343                           0.338
+26                           0.588                           0.556
+27                           0.386                           0.383
+28                           0.478                           0.481
+29                           0.556                           0.543
+30                           0.567                           0.567
+31                           0.571                           0.571
+32                           0.559                           0.559
+33                           0.493                           0.489
+34                           0.512                           0.511
+35                           0.522                           0.522
+36                           0.566                           0.564
+37                           0.601                           0.601
+38                           0.414                           0.410
+39                           0.540                           0.539
+40                           0.471                           0.461
+41                           0.515                           0.512
+42                           0.429                           0.429
+43                           0.437                           0.431
+44                           0.511                           0.509
+45                           0.521                           0.522
+46                           0.438                           0.438
+47                           0.626                           0.629
+48                           0.548                           0.548
+49                           0.439                           0.458
+50                           0.603                           0.603
+51                           0.609                           0.640
+52                           0.490                           0.488
+53                           0.579                           0.583
+54                           0.600                           0.600
+55                           0.613                           0.613
+56                           0.596                           0.596
+57                           0.704                           0.703
+58                           0.545                           0.522
+59                           0.487                           0.477
+60                           0.520                           0.516
+61                           0.579                           0.575
+62                           0.636                           0.628
+63                           0.469                           0.466
+64                           0.604                           0.565
+65                           0.463                           0.465
+66                           0.500                           0.500
+67                           0.583                           0.582
+68                           0.626                           0.620
+69                           0.544                           0.537
+70                           0.559                           0.559
+71                           0.478                           0.440
+72                           0.473                           0.477
+73                           0.532                           0.532
+74                           0.567                           0.563
+75                           0.557                           0.530
+76                           0.423                           0.417
+77                           0.541                           0.535
+78                           0.478                           0.476
+79                           0.533                           0.533
+80                           0.533                           0.533
+81                           0.540                           0.537
+82                           0.559                           0.555
+83                           0.380                           0.380
+84                           0.426                           0.424
+85                           0.585                           0.583
+86                           0.413                           0.413
+87                           0.445                           0.443
+88                           0.548                           0.548
+   Free.Throws Free.Throw.Attempts Free.Throw.Percentage
+1           11                  14                 0.786
+2            5                  11                 0.455
+3           68                  95                 0.716
+4          142                 226                 0.628
+5           18                  22                 0.818
+6          162                 213                 0.761
+7            8                  15                 0.533
+8           50                  67                 0.746
+9          214                 329                 0.650
+10         103                 129                 0.798
+11          31                  39                 0.795
+12          39                  48                 0.813
+13           3                   8                 0.375
+14          96                 128                 0.750
+15          88                 108                 0.815
+16          72                 111                 0.649
+17         175                 232                 0.754
+18         108                 148                 0.730
+19         132                 225                 0.587
+20          89                 125                 0.712
+21          88                 121                 0.727
+22         208                 586                 0.355
+23         126                 165                 0.764
+24           6                   8                 0.750
+25           7                   8                 0.875
+26          25                  35                 0.714
+27          22                  45                 0.489
+28         229                 289                 0.792
+29          19                  44                 0.432
+30         146                 207                 0.705
+31           0                   0                    NA
+32          57                  76                 0.750
+33          54                  67                 0.806
+34         113                 150                 0.753
+35         228                 308                 0.740
+36          69                 117                 0.590
+37          34                  59                 0.576
+38          19                  23                 0.826
+39         128                 161                 0.795
+40          47                  57                 0.825
+41         317                 403                 0.787
+42          25                  30                 0.833
+43           8                   9                 0.889
+44         133                 194                 0.686
+45         134                 227                 0.590
+46          16                  29                 0.552
+47          24                  50                 0.480
+48          70                 132                 0.530
+49          94                 114                 0.825
+50          87                 114                 0.763
+51           3                   4                 0.750
+52          92                 131                 0.702
+53         200                 251                 0.797
+54           2                   2                 1.000
+55         114                 196                 0.582
+56          60                  84                 0.714
+57         266                 619                 0.430
+58           6                   6                 1.000
+59           3                   3                 1.000
+60         215                 335                 0.642
+61          18                  36                 0.500
+62          27                  46                 0.587
+63         212                 276                 0.768
+64          22                  32                 0.688
+65         203                 245                 0.829
+66           2                   2                 1.000
+67          80                 211                 0.379
+68         232                 474                 0.489
+69          43                  59                 0.729
+70         161                 283                 0.569
+71           2                   2                 1.000
+72         476                 663                 0.718
+73          57                 104                 0.548
+74          81                 125                 0.648
+75          62                  69                 0.899
+76          61                  99                 0.616
+77         154                 190                 0.811
+78          52                  62                 0.839
+79          11                  25                 0.440
+80          61                 112                 0.545
+81         205                 248                 0.827
+82         223                 275                 0.811
+83          16                  20                 0.800
+84         174                 239                 0.728
+85         106                 171                 0.620
+86          25                  38                 0.658
+87         117                 145                 0.807
+88          19                  45                 0.422
+   Offensive.Rebounds Defensive.Rebounds Total.Rebounds Assists
+1                  12                 81             93      26
+2                  12                 14             26       3
+3                 110                227            337      33
+4                 182                473            655      29
+5                  22                 58             80      10
+6                 184                363            547      42
+7                  18                 28             46       7
+8                  65                157            222      27
+9                 238                627            865      30
+10                148                448            596     263
+11                 38                 79            117      34
+12                 45                 75            120      30
+13                  7                 14             21       3
+14                 72                209            281     105
+15                 62                116            178      29
+16                 57                244            301      70
+17                138                317            455      71
+18                 69                266            335      98
+19                138                369            507     104
+20                156                295            451      87
+21                 68                264            332      41
+22                395                803           1198      67
+23                140                244            384      51
+24                  8                 13             21       1
+25                  4                 24             28       6
+26                 30                 72            102      26
+27                 87                168            255     110
+28                155                638            793     294
+29                 17                 28             45       7
+30                222                519            741     106
+31                  7                  4             11       0
+32                 67                161            228      13
+33                 53                166            219      62
+34                174                402            576     179
+35                218                478            696     178
+36                 87                134            221      54
+37                 94                138            232      16
+38                 31                 95            126      47
+39                268                334            602     114
+40                 28                 69             97      18
+41                204                369            573     147
+42                 21                 51             72       9
+43                  9                 54             63      18
+44                122                251            373      65
+45                154                388            542     122
+46                 13                 37             50      15
+47                121                371            492     162
+48                 91                166            257      32
+49                 77                162            239      61
+50                 73                121            194      21
+51                  3                 24             27       9
+52                115                332            447     163
+53                249                415            664      33
+54                  1                  3              4       0
+55                219                314            533      62
+56                 86                202            288      50
+57                267                792           1059      90
+58                  4                 18             22       5
+59                  7                 17             24      11
+60                201                427            628     226
+61                 53                 80            133       3
+62                 41                 82            123      10
+63                249                469            718     128
+64                 33                 56             89       9
+65                 58                304            362     196
+66                  0                  8              8       2
+67                194                300            494      47
+68                238                597            835      98
+69                 56                117            173      20
+70                208                460            668      91
+71                  6                  9             15       2
+72                158                589            747     214
+73                169                254            423      33
+74                134                218            352      37
+75                 77                213            290      56
+76                 65                110            175      40
+77                181                379            560     189
+78                 75                194            269      31
+79                 25                103            128      31
+80                120                294            414      26
+81                157                428            585     143
+82                228                629            857     161
+83                  7                 14             21      11
+84                178                416            594      97
+85                175                401            576      64
+86                 32                 40             72      14
+87                132                266            398      95
+88                 44                113            157      16
+   Steals Blocks Turnovers Personal.Fouls Points Missed.Free.Throws
+1       8      8       -13             56    196                 -3
+2       4      5        -7             11     23                 -6
+3      22     57       -71            159    475                -27
+4      19    133       -71            225    454                -84
+5       8     12        -8             40     87                 -4
+6      25     80       -85            158    768                -51
+7      12     12       -11             29     65                 -7
+8      18     41       -47             92    300                -17
+9      44    269      -137            201   1040               -115
+10     68    121      -107            163   1249                -26
+11     13     27       -27             72    195                 -8
+12     20     12       -24             71    201                 -9
+13      1      6        -5              8     25                 -5
+14     52     33       -74            163    687                -32
+15     10     22       -46             97    364                -20
+16     30     41       -34            117    562                -39
+17     57     63       -68            204    638                -57
+18     38     43       -58            126    606                -40
+19     65     75      -100            220    660                -93
+20     36     37       -92            155    645                -36
+21     25     86       -67            158    619                -33
+22    119    112      -155            245   1314               -378
+23     21     52       -67            151    514                -39
+24      2     12        -2             15     18                 -2
+25      2      3        -4             19     34                 -1
+26      6     13       -13             31    105                -10
+27     18     29       -52             77    124                -23
+28     42    146      -164            148   1187                -60
+29      5      2        -9             12     69                -25
+30     47     96      -121            193   1012                -61
+31      0      1        -3              4      8                  0
+32     22     46       -32            109    255                -19
+33     33     65       -57            163    546                -13
+34     53     70      -123            173   1181                -37
+35     72     67      -129            163   1210                -80
+36     18    109       -64            131    397                -48
+37     21     50       -40             73    314                -25
+38      8     36       -43             67    187                 -4
+39     16    129      -133            182    842                -33
+40      4      9       -26             61    304                -10
+41     58    124      -175            215   1501                -86
+42      9     14       -12             37     91                 -5
+43      9      8       -11             32     70                 -1
+44     22     61      -124            140    928                -61
+45    118    100      -158            192    747                -93
+46      5      5        -6             35     58                -13
+47     33    114       -83            221    375                -26
+48     18     50       -38             94    320                -62
+49     19     34       -66            117    512                -20
+50     12     23       -29             54    297                -27
+51      6      1        -3             16     76                 -1
+52     47     78       -90            125    522                -39
+53     26     33      -115            166   1038                -51
+54      0      0        -3              4      8                  0
+55     42     89       -84            223    636                -82
+56     47     68       -64            139    328                -24
+57     51    177      -107            207    980               -353
+58      0      3        -6             18     30                  0
+59      1      1        -8             15     44                  0
+60     68     85      -154            253    749               -120
+61      5     26       -21             49    172                -18
+62      8     36       -23             54    125                -19
+63     64     22      -119            181    650                -64
+64     14     10        -7             25     92                -10
+65     50     70      -118            141    861                -42
+66      0      0        -3              6      4                  0
+67     59     92       -60            190    542               -131
+68     69    113      -166            219    976               -242
+69     21     53       -28             75    217                -16
+70     45    135      -114            163    557               -122
+71      1      2        -8             19     24                  0
+72    101     92      -249            236   1748               -187
+73     40     70       -48            185    529                -47
+74     48     66       -46            146    463                -44
+75     13     15       -54            115    465                 -7
+76     24     44       -55             91    263                -38
+77     79     50      -104            208    796                -36
+78     19     36       -54            134    352                -10
+79     11     11       -41             64     91                -14
+80     21     23       -60            124    269                -51
+81     94     96      -140            219    827                -43
+82     58    138      -183            245   1503                -52
+83      1      0        -9             22     54                 -4
+84     38     62      -145            230    703                -65
+85     36     44       -93            145    472                -65
+86      4     10       -12             43     87                -13
+87     32    110       -76            252    481                -28
+88     14     18       -22             78    133                -26
+   Missed.Field.Goals Efficiency.Index
+1                 -90       0.90887736
+2                  -8       0.20063590
+3                -156       0.82511431
+4                -132       1.44289905
+5                 -34       1.17425666
+6                -233       1.65511922
+7                 -16       0.68089786
+8                 -96       0.93831573
+9                -269       2.87791382
+10               -519       2.81349420
+11                -76       0.60648111
+12                -74       1.03531624
+13                 -8       0.32050145
+14               -303       1.25982596
+15               -152       0.35053379
+16               -260       1.65082099
+17               -206       1.70959615
+18               -310       0.99854235
+19               -184       1.84805759
+20               -271       1.06402848
+21               -266       1.24151772
+22               -508       1.72040862
+23               -190       0.82235842
+24                 -4       0.51640157
+25                -27       0.23871612
+26                -32       0.83516618
+27                -82       2.06167906
+28               -528       2.77684314
+29                -21       0.12129124
+30               -331       2.04678949
+31                 -3       0.03733038
+32                -78       1.01701448
+33               -259       0.97311427
+34               -513       2.15598170
+35               -450       2.12069278
+36               -127       1.28701439
+37                -93       0.92920504
+38               -121       0.51569486
+39               -305       1.43582059
+40               -152       0.11011103
+41               -566       1.75911996
+42                -44       1.34241232
+43                -41       1.10193824
+44               -384       0.61217539
+45               -281       2.44301852
+46                -27       0.49072828
+47               -104       2.31206151
+48               -103       1.07259533
+49               -259       0.49848179
+50                -69       0.73790575
+51                -28       0.40196209
+52               -226       2.19910657
+53               -305       0.96385387
+54                 -2      -0.20062680
+55               -165       1.47378083
+56                -91       1.64601628
+57               -151       2.17703290
+58                -11       0.16815277
+59                -23       0.18989621
+60               -250       1.84546509
+61                -57       0.59921068
+62                -29       0.86433304
+63               -251       1.63992824
+64                -28       1.40803476
+65               -379       2.23592888
+66                 -1       0.03165936
+67               -166       1.50718624
+68               -228       1.67441062
+69                -75       1.13805421
+70               -156       2.20527731
+71                -14      -0.06220709
+72               -731       1.73349323
+73               -208       1.28042835
+74               -148       1.61119512
+75               -185       0.77960584
+76               -141       1.00421579
+77               -293       2.23234975
+78               -165       0.75745517
+79                -35       0.41527815
+80                -91       0.66533438
+81               -271       2.27122257
+82               -528       2.31359173
+83                -31      -0.03811937
+84               -360       0.77784268
+85               -131       1.34988881
+86                -44       0.41432854
+87               -229       1.39490613
+88                -47       0.72966601

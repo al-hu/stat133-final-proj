@@ -84,10 +84,10 @@ quan_df <- Filter(is.numeric, roster_salary_stats[3:38])
 quan_colnames <- names(quan_df)
 
 # loop over each quantitative variable to create multiple boxplots
-# and save them as separate pdf files
+# by team and save them as separate pdf files
 for (i in quan_colnames) {
   # produce multiple pdf files in specific file names
-  pdf(paste("../../images/", i, "_boxplot.pdf", sep = ""))
+  pdf(paste("../../images/", i, "_boxplot_by_team.pdf", sep = ""))
   # plot boxplots with x axis as names of teams and y ais as
   # names of quantitative variables
   boxplots <- ggplot(roster_salary_stats,
@@ -106,6 +106,33 @@ for (i in quan_colnames) {
                      # rotate x axis labels for 30 degrees
                      theme(axis.text.x = element_text(angle = 30,
                                          hjust = 1))
+  plot(boxplots)
+  dev.off()
+}
+
+# loop over each quantitative variable to create multiple boxplots
+# by position and save them as separate pdf files
+for (i in quan_colnames) {
+  # produce multiple pdf files in specific file names
+  pdf(paste("../../images/", i, "_boxplot_by_position.pdf", sep = ""))
+  # plot boxplots with x axis as names of teams and y ais as
+  # names of quantitative variables
+  boxplots <- ggplot(roster_salary_stats,
+                     aes_string(x = roster_salary_stats$Position,
+                                y = i)) +
+    geom_boxplot() +
+    # flip the coordinations
+    coord_flip() +
+    # add titles and change axis labels
+    labs(title = paste("Box Plot of", i,
+                       "(by Team)", sep = " "),
+         x = "Team") +
+    # rescale y axis
+    scale_y_continuous(breaks = 
+                         pretty_breaks(n = 15)) +
+    # rotate x axis labels for 30 degrees
+    theme(axis.text.x = element_text(angle = 30,
+                                     hjust = 1))
   plot(boxplots)
   dev.off()
 }
@@ -239,25 +266,36 @@ r_value_blk_salary <- cor(roster_salary_stats$Salary...,
 r_value_blk_salary
 
 # view the descriptive statistics of this regression model
-# eg. r squared value
+# eg. r-squared value
 summary(regression_blk_salary)
 
 # =========================================================================
-# Calculate correlation coefficents and r-squared values
+# Calculate correlation coefficients and r-squared values to 
+# determine the relationship between some quantitative variables
+# and salary
 # =========================================================================
+# get the summary statistics to view the r-squared values
 summary(lm(roster_salary_stats$Salary... ~
            roster_salary_stats$Three.Point.Goals))
-cor(roster_salary_stats$Salary...,
-         roster_salary_stats$Three.Point.Goals)
+
 summary(lm(roster_salary_stats$Salary... ~
-             roster_salary_stats$Two.Point.Field.Goals))
-cor(roster_salary_stats$Salary...,
-    roster_salary_stats$Two.Point.Field.Goals)
+          roster_salary_stats$Two.Point.Field.Goals))
+
 summary(lm(roster_salary_stats$Salary... ~
-             roster_salary_stats$Field.Goals))
-cor(roster_salary_stats$Salary...,
-    roster_salary_stats$Field.Goals)
+           roster_salary_stats$Field.Goals))
+
 summary(lm(roster_salary_stats$Salary... ~
-             roster_salary_stats$Free.Throws))
+           roster_salary_stats$Free.Throws))
+
+# calculate the correlation coefficients
 cor(roster_salary_stats$Salary...,
     roster_salary_stats$Free.Throws)
+
+cor(roster_salary_stats$Salary...,
+    roster_salary_stats$Three.Point.Goals)
+
+cor(roster_salary_stats$Salary...,
+    roster_salary_stats$Two.Point.Field.Goals)
+
+cor(roster_salary_stats$Salary...,
+    roster_salary_stats$Field.Goals)
