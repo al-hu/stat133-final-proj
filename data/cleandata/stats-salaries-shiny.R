@@ -1,10 +1,14 @@
 # setwd("/Users/apple/Documents/college/FALL 2016/stat 133/final/stat133-final-proj/data/cleandata")
+#setwd("/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/code/functions")
+
 # This is a Shiny web application. 
 # It displays a horizontal bar-chart on team and salary statistic.
 
 library(shiny)
 library(ggplot2)
-setwd("/Users/sarahhu/Desktop/stat133-final-proj/data/cleandata")
+#setwd("/Users/sarahhu/Desktop/stat133-final-proj/data/cleandata")
+setwd("/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj/data/cleandata")
+
 # Define UI for application that draws a histogram
 # setwd("/Users/apple/Documents/college/FALL 2016/stat 133/final/stat133-final-proj/data/cleandata")
 # This is a Shiny web application. 
@@ -85,7 +89,13 @@ server <- shinyServer(function(input, output) {
     #x <- df()[, toString(input$xaxis)]
     #y <- df[, toString(input$yaxis)]
     #coeff <- cor(x, y)
-    #output$correlation <- renderText(paste0("Correlation Coefficient: ", as.character(coeff)))
+    output$correlation <- renderText({
+        df <- read.csv("eff-stats-salary.csv")
+        x <- df[, input$xaxis]
+        y <- df[, input$yaxis]
+        coeff <- cor(x,y)
+        paste0("Correlation Coefficient: ", as.character(coeff))
+        })
 
 
 })
