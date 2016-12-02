@@ -75,14 +75,18 @@ server <- shinyServer(function(input, output) {
             ggplot(df(), aes(x = get(toString(input$xaxis)),
                                             y = get(toString(input$yaxis)))) +
             geom_point(aes(col = df()$Position)) +
+            geom_smooth(method=lm, se=FALSE) +
             theme_minimal() +
             labs(x = input$xaxis, y = input$yaxis, col = "Position")
+          
       } else {
             ggplot(df(), aes(x = get(toString(input$xaxis)),
                            y = get(toString(input$yaxis)))) +
                 geom_point() +
+                geom_smooth(method=lm, se=FALSE) +
                 theme_minimal() +
                 labs(x = input$xaxis, y = input$yaxis)
+
       }
     })
 
@@ -94,7 +98,8 @@ server <- shinyServer(function(input, output) {
         x <- df[, input$xaxis]
         y <- df[, input$yaxis]
         coeff <- cor(x,y)
-        paste0("Correlation Coefficient: ", as.character(coeff))
+        paste0("Correlation Coefficient between ", input$xaxis, " and ", input$yaxis,
+               ": ", as.character(coeff))
         })
 
 
