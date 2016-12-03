@@ -1,0 +1,41 @@
+---
+title: "Determinants of NBA Players' Salary"
+author: "Albert L Hu, Sarah Hu, Ming Ho Cheung, Zihan Chen"
+date: "December 2, 2016"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction {.flexbox .vcenter}
+
+In the 2013-2014 National Basketball Association (NBA) season, Kobe Byrant earned $30.4 million whereas the average NBA player salary is about $5 million. 
+
+Is Kobe that much better than a player who earns $5 million a year?  What determines how much a player is paid?
+
+
+## Analytical and Motivating Question {.flexbox .vcenter}
+
+What are the determinants of NBA players' salary?
+
+How are the skills of a player is related to his salary?
+
+## Statistics that are most 
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+
+```
+
+## Slide with Plot
+
+```{r pressure}
+
+```
+
