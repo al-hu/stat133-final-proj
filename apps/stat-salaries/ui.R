@@ -8,6 +8,7 @@ setwd("/home/albert/Documents/Albert/Fall16/Stat133/stat133-final-proj")
 # It displays a scatterplot between any two of the columns in the 
 # eff-stats-salary.csv
 
+library(shiny)
 
 # Define UI for application that draws a scatterplot
 shiny::shinyUI(fluidPage(
