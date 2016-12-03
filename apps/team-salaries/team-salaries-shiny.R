@@ -1,4 +1,3 @@
-# setwd("/Users/apple/Documents/college/FALL 2016/stat 133/final/stat133-final-proj/data/cleandata")
 # This is a Shiny web application. 
 # It displays a horizontal bar-chart on team and salary statistic.
 
