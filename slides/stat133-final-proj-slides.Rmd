@@ -1,6 +1,6 @@
 ---
 title: "Determinants of NBA Players' Salary"
-author: "Albert L Hu, Sarah Hu, Ming Ho Cheung, Zihan Chen"
+author: "Albert L Hu, Xinruo Hu, Ming Ho Cheung, Zihan Chen"
 output: ioslides_presentation
 ---
 
