@@ -3,7 +3,8 @@
 #
 # Description:
 # This script shows you how to use Principal Component Analysis to
-# compute the Efficiency Index for the final project using
+# compute the Efficiency Index for the final project using the data
+# from the roster-salary-stats.csv
 # =========================================================================
 
 library(dplyr)
@@ -18,11 +19,11 @@ source(file.path(root, "code/functions/create_eff.R"))
 dat <- read.csv("data/cleandata/roster-salary-stats.csv", row.names = 1)
 
 # subset the dataset by position
-C <- subset_by_position('C')
-PF <- subset_by_position('PF')
-SF <- subset_by_position('SF')
-SG <- subset_by_position('SG')
-PG <- subset_by_position('PG')
+C <- subset_by_position(dat, 'C')
+PF <- subset_by_position(dat, 'PF')
+SF <- subset_by_position(dat, 'SF')
+SG <- subset_by_position(dat, 'SG')
+PG <- subset_by_position(dat, 'PG')
 
 # get the values required for calculating efficiency
 matrix_C <- calculate_matrix(C)
@@ -94,7 +95,6 @@ eff_stats_salary$Turnovers <- abs(eff_stats_salary$
 
 # rename the salary column
 eff_stats_salary <- rename(eff_stats_salary, Salary = Salary...)
-
 
 # write csv file and save it to a specific folder
 path_to_file <- "/data/cleandata/eff-stats-salary.csv"

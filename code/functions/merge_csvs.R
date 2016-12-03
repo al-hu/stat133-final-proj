@@ -1,4 +1,13 @@
-# function that reads a roster csv, and returns at dataframe 
+# ============================================================================
+# Title: Merge Data Helper Functions
+#
+# Description: Helper functions to merge data pulled from Basketball Reference
+# Used in order to come up with a dataframe containing all the information
+# from Basketball Reference.
+# ============================================================================
+
+
+# function that reads a roster csv, and returns a dataframe 
 # with the team name appended to each row of the csv
 # input - team name abbreviation (e.g. "CLE")
 # output - dataframe containing data in the team's roster csv
