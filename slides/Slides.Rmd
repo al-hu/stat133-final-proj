@@ -1,7 +1,6 @@
 ---
 title: "Determinants of NBA Players' Salary"
 author: "Albert L Hu, Sarah Hu, Ming Ho Cheung, Zihan Chen"
-date: "December 2, 2016"
 output: ioslides_presentation
 ---
 
@@ -9,33 +8,152 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Introduction {.flexbox .vcenter}
+## Purpose {.flexbox .vcenter}
 
-In the 2013-2014 National Basketball Association (NBA) season, the Los Angeles Laker’s Kobe Bryant earned $30.4 million whereas the average NBA player salary is about 5 million. Is Kobe that much better than a player who earns 5 millions a year? Thus the question whether NBA players are overpaid arises.
+>- The motivating question: In the 2015-2016 season, what is the interpretation of the performance statistics of a player and what is the relationship between performance variables and a player’s salary? 
 
-Our project serves to highlight the performance variables, such as points, turnovers, and blocks, that affect players’ salary in NBA. The methodology is chosen as not only closely analyze performance of players, but as a further motivation in seeking 
+>- Our purpose is to answer the question by exploring the relationship between the salary and performance of NBA players. 
 
-## Analytical and Motivating Question {.flexbox .vcenter}
 
-What are the determinants of NBA players' salary?
+## Main Methodology {.flexbox .vcenter}
 
-How the skills of a player is related to his salary?
+>- Use Exploratory data analysis (EDA) to explore individual's performance statistic and view the relationship between different performance variables and salary 
 
-## Slide with Bullets
+>- Calculate the efficiency (EFF) indices by positions to better evaluate players’ performance with different positions using PCA
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
 
-## Slide with R Output
+## Data {.flexbox .vcenter}
 
-```{r cars, echo = TRUE}
-str(roster_salary_stats)
-```
+>- Our team scraped three kinds of raw data tables for each team from the website: Roster, Totals, and Salary from Basketball Reference.
 
-## Slide with Plot
+>- The website (http://www.basketball-reference.com)  provides statistics, scores, and history for the National Basketball Association(NBA) and other basketball competitions.
 
-```{r pressure}
+>- Our team focused on analyzing the statistics of all 30 NBA teams in the 2015-2016 season. And data are stored as comma separated file (CSV). 
 
-```
+## Structure of roster-salary-stats data frame{.flexbox .vcenter}
 
+![](/Users/Nicole/Desktop/Str_table_1.png)
+
+## Cont'd {.flexbox .vcenter}
+
+![](/Users/Nicole/Desktop/Str_table_2.png)
+
+## Cont'd {.flexbox .vcenter}
+
+![](/Users/Nicole/Desktop/Str_table_3.png)
+
+## Exploratory Data Analysis
+
+>- Player Analysis
+
+>- Skills and Salary Analysis
+
+>- Efficiency and Value Analysis 
+
+## Player Analysis (by position) {.flexbox .vcenter}
+
+  ![Bar Chart of Players' Position](/Users/Nicole/Desktop/stat133-final-proj/images/Position_barchart.png)
+
+## Cont'd
+
+>- Roughly equal number of players in each position. However, there are slightly more players who play power forward(PF). 
+
+>- This makes sense because the power forward's primary goal is shot blocking and short range shooting. They defend opposite power forwards, stay close to the basket, and help teammates in scoring points.
+
+## Skills and Salary Analysis (by points) {.flexbox .vcenter}
+
+![*Scatterplot of Points and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Points_Salary.png)
+
+## Cont'd
+
+>- Moderately strong positive correlation of 0.64 between points scored in the season and salaries. 
+
+>- About 40.84% of the variation in salaries can be explained by points scored in the season.
+
+>- More points = higher salary
+
+## Skills and Salary Analysis (by field goals) {.flexbox .vcenter}
+
+![*Scatterplot of Field Goals and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Field.Goals_Salary.png)
+
+## Cont'd
+
+>- Moderately strong positive correlation of 0.64. 
+
+>- About 40.97% of the variation of salaries can be explained by the number of field goals. 
+
+>- Thus the number of points a player contributes appears to be a main factor that influences his salary. 
+
+## Skills and Salary Analysis (by three point goals) {.flexbox .vcenter}
+
+![*Scatterplot of Three Point Goals and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Three.Point.Goals_Salary.png)
+
+## Cont'd
+
+>- Weak positive correlation of 0.34. 
+
+>- Only 11.34% of the variation of salaries can be explained by the number three point goals. 
+
+>- The number of three point field goals a player contributes is not a main factor that influence the amount of salaries a player gets.
+
+
+## Skills and Salary Analysis (by two point goals{.flexbox .vcenter}
+
+![*Scatterplot of Two Point Goals and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Two.Point.Goals_Salary.png)
+
+## Cont'd
+
+>- Moderately strong positive correlation of 0.64. 
+
+>- About 41.14% of the variation of salaries can be explained by the number two point goals. 
+
+>- Thus the number of two point goals a player contributes appears to be a main factor that influences the salary of a player.
+
+
+## Skills and Salary Analysis {.flexbox .vcenter}
+
+![*Scatterplot of Free Throws and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Free.Throws_Salary.png)
+
+## Cont'd
+
+>- Moderately strong positive correlation of 0.6213. 
+
+>- About 38.47% of the variation of salaries can be explained by the number of free throws. 
+
+>- The number of free throws a player makes appears to be a main factor that influences the salary of a player.
+
+## Skills and Salary Analysis {.flexbox .vcenter}
+
+![*Scatterplot of Number of Turnovers and Salary*](/Users/Nicole/Desktop/stat133-final-proj/images/Turnover_Salary.png)
+
+## Cont'd
+
+>- Strong positive correlation of 0.5828. 
+
+>- About 33.83% of the variation of salaries can be explained by the number of turnovers.
+
+## Efficiency and Value Analysis {.flexbox .vcenter}
+
+![Scatterplot of EFF Indices and Salary](/Users/Nicole/Desktop/stat133-final-proj/images/Eff.Index_Salary.png)
+
+## Cont'd
+
+>- Positive correlation of 0.498 between efficiency and salary. 
+
+>- EFF indices can only account for about 25% of variations in salaries; the majority of players have salaries below $1 million.
+
+## Conclusion
+
+>- We found that total points, field goals (especially two point goals), and free throws were the three main contributors to player’s salary. 
+
+>- Rebounds (especially defensive rebounds), assists, turnovers, and personal fouls were also statistically significant. 
+
+>- Turnovers were found to be a significant contributor in this study. 
+
+## Cont'd
+
+>- We found a positive relationship between efficiency and salaries.
+
+>- Spotted outliers represent players who were overpaid or underpaid. 
+
+>- Dahntay Jones appears to be underpaid; Giannis Antetokounmpo is underpaid because he has the second highest efficiency but much lower salary than players with lower efficiency indices. 
