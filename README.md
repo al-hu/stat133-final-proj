@@ -11,7 +11,7 @@ Install the packages "dplyr", "shiny", "FactoMineR", and "ggplot2" with the comm
 
 install.packages("dplyr")  
 install.packages("shiny")  
-install.packages("ggplot2")
+install.packages("ggplot2")  
 install.packages("FactoMineR")
 
 The Rmd file for our final can be knitted in RStudio into an html, pdf, or Word document.
